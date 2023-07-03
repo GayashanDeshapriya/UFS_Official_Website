@@ -1,0 +1,87 @@
+/* Navbar */
+.navbar .dropdown-toggle::after {
+  border: none;
+  content: "\f107";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(--primary);
+}
+.nav-item.active {
+  background-color: #ffffff; /* Set the background color for the active item */
+  color: #000000; /* Set the text color for the active item */
+}
+
+
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-top: 5px solid #ffffff;
+    position: sticky;
+    top: 0;
+    padding: 0;
+  }
+  
+  .navbar-brand h2 {
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .navbar-toggler {
+    margin-right: 4px;
+  }
+  
+  .navbar-nav {
+    margin-right: 30px;
+    padding: 10px;
+  }
+  
+  .nav-item {
+    margin-right: 10px;
+  }
+  
+  .nav-link {
+    color: #000;
+  }
+  
+  .nav-link.active {
+    font-weight: bold;
+  }
+  
+  .dropdown-menu {
+    animation: fadeUp 0.3s;
+  }
+  
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .d-none {
+    display: none;
+  }
+  
+  .d-lg-block {
+    display: block;
+  }
+  
+  /* Header Phone Number */
+  .nav-icon {
+    color: #0279f8;
+    margin-right: 10px;
+    margin-bottom: 7px;
+  }
+  
+
+  
