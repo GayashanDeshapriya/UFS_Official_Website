@@ -3,26 +3,36 @@ import React from 'react'
 
 function Topbar() {
   return (
-    <div className="container-fluid bg-dark">
-        <div className="row py-1 px-lg-0">
-            <div className="col-lg-2 text-center text-lg-left mb-2 mb-lg-0">
-                <div className="d-inline-flex align-items-left text-white">
-                    <small><i className="fa fa-envelope mr-0"></i>  info@example.com</small>
-                </div>
+    <div class="container-fluid bg-dark">
+    <div class="row py-2 px-lg-5">
+        <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+            <div class="d-inline-flex align-items-center text-white">
+                <small><i class="fa fa-phone-alt mr-2"></i>+012 345 6786</small>
+                <small class="px-3">|</small>
+                <small><i class="fa fa-envelope mr-2"></i>info@example.com</small>
             </div>
-            <div className="col-lg-9 text-end text-lg-left mb-2 mb-lg-0">
-                <div className="d-inline-flex align-items-left text-white">
-                    <small>UNIVERSAL FREIGHT SOLUTION LLC</small>
-                </div>
-            </div>
-            <div className="col-lg-1 text-right text-lg-right">
-                <div className="d-inline-flex align-items-end">
-                    
-                    
-                </div>
+        </div>
+        <div class="col-lg-6 text-center text-lg-right">
+            <div class="d-inline-flex align-items-center">
+                <a class="text-white px-2" href="">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="text-white px-2" href="">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a class="text-white px-2" href="">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a class="text-white px-2" href="">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a class="text-white pl-2" href="">
+                    <i class="fab fa-youtube"></i>
+                </a>
             </div>
         </div>
     </div>
+</div>
   )
 }
 

@@ -1,11 +1,9 @@
 import React from 'react'
-import Navbar from '../Navbar/Navbar'
-import Topbar from '../Topbar/Topbar'
-import Footer from '../Footer/Footer'
 import img3 from '../../assets/feature.jpg'
 import About from './About'
 import Services from './Services'
 import Header from '../Header/Header'
+import Carousel from '../Carousel/Carousel'
 
 
 
@@ -17,8 +15,9 @@ function Home() {
 
 <div>
 
-    <Header/>
-    <About/>
+    
+    <Carousel/>
+    
 <div className="container-fluid bg-light my-5">
     <div className="container">
       <div className="row align-items-center">
@@ -39,7 +38,7 @@ function Home() {
       </div>
     </div>
   </div>
-  <Services/>
+  
 </div>
 
   );
