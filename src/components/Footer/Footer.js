@@ -49,8 +49,7 @@ function Footer() {
             <Link to="/about" className="btn btn-link quick-link">About Us</Link>
             <Link to="/contact" className="btn btn-link quick-link">Contact Us</Link>
             <Link to="/service" className="btn btn-link quick-link">Our Services</Link>
-            <Link className="btn btn-link quick-link" to="">Terms & Condition</Link>
-            <Link className="btn btn-link quick-link" to="">Support</Link>
+            
           </div>
           <div className="col-lg-3 col-md-6">
           <h4 className="text-light mb-4">Newsletter</h4>
