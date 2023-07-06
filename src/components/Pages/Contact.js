@@ -11,7 +11,7 @@ function Contact () {
                         <h4 className="m-0"><i className="fa fa-map-marker-alt text-white mr-2"></i>123 Street, New York, USA</h4>
                     </div>
                     <iframe style={{ width: '100%', height: '470px', border: '0' }}
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
+                       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3213364.9176379982!2d53.606208774527715!3d23.75348295061764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e48dfb1ab12bd%3A0x33d32f56c0080aa7!2sUnited%20Arab%20Emirates!5e0!3m2!1sen!2slk!4v1688666795718!5m2!1sen!2slk"
                         frameborder="0"  allowFullScreen="" aria-hidden="false" tabIndex="0"></iframe>
                 </div>
                 <div className="col-lg-7">
