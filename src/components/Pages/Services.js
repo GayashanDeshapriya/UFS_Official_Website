@@ -1,7 +1,4 @@
 import React from 'react';
-import Navbar from '../Navbar/Navbar';
-import Topbar from '../Topbar/Topbar';
-import Footer from '../Footer/Footer';
 import service1 from '../../assets/service-1.jpg';
 import service2 from '../../assets/service-2.jpg';
 import service3 from '../../assets/service-3.jpg';
