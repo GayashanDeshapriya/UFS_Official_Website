@@ -12,6 +12,14 @@ const MaintextStyle={
     paddingTop:'0px',
     
 }
+
+const textStyle={
+    
+  fontWeight: 'bold',
+  paddingTop:'0px',
+  
+  
+}
   return (
     <div className="container-fluid p-0 pb-5">
       <div className="owl-carousel header-carousel position-relative mb-5">
@@ -24,7 +32,7 @@ const MaintextStyle={
                   
                   <h1 className="display-3 text-primary animated slideInDown mb-4" 
                                       style={MaintextStyle}>UNIVERSAL <span className="text-secondary" >FREIGHT SOLUTIONS LLC</span></h1>
-                  <h3 className="display-3 text-white  mb-4" >#1 Place For Your Logistics Solution need</h3>
+                  <h3 className="display-3 text-white  mb-4" style={textStyle}>#1 Place For Your Logistics Solution need</h3>
                   
                   <a href="" className="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
                   
