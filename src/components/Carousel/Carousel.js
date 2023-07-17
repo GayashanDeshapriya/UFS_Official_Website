@@ -9,7 +9,6 @@ const MaintextStyle={
     textShadow: '2px 2px 4px rgba(0, 0, 0, 1)',
     WebkitTextStrokeWidth: '0.5px',
     WebkitTextStrokeColor: 'white',
-    fontSize: '40px',
     paddingTop:'0px',
     
 }
@@ -23,12 +22,12 @@ const MaintextStyle={
               <div className="row justify-content-start">
                 <div className="col-10 col-lg-8">
                   
-                  <h1 className="mb-5 text-primary font-weight-bold" 
+                  <h1 className="display-3 text-primary animated slideInDown mb-4" 
                                       style={MaintextStyle}>UNIVERSAL <span className="text-secondary" >FREIGHT SOLUTIONS LLC</span></h1>
-                  <h1 className="display-3 text-white animated slideInDown mb-4">#1 Place For Your <span className="text-primary">Logistics</span> Solution need</h1>
+                  <h1 className="display-3 text-white animated slideInDown mb-4" >#1 Place For Your <span className="text-primary">Logistics</span> Solution need</h1>
                   
                   <a href="" className="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
-                  <a href="" className="btn btn-secondary py-md-3 px-md-5 me-3 animated slideInRight">Free Quote</a>
+                  
                 </div>
               </div>
             </div>
