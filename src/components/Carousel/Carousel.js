@@ -7,7 +7,7 @@ const MaintextStyle={
     
     fontWeight: 'bold',
     textShadow: '2px 2px 4px rgba(0, 0, 0, 1)',
-    WebkitTextStrokeWidth: '1px',
+    WebkitTextStrokeWidth: '0.5px',
     WebkitTextStrokeColor: 'white',
     fontSize: '40px',
     paddingTop:'0px',
