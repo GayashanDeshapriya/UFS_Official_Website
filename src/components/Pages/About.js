@@ -33,45 +33,18 @@ function About() {
               data-wow-delay="0.3s"
             >
               <h5 className="text-secondary text-uppercase mb-3">About Us</h5>
-              <h2 className="mb-5 text-primary font-weight-bold">UNIVERSAL FREIGHT SOLUTIONS LLC</h2>
+              <h2 className="mb-5 text-primary font-weight-bold" style={{ fontWeight: 'bold' }}>UNIVERSAL <span className="text-secondary" >FREIGHT SOLUTIONS LLC</span></h2>
               <h6 className="font-weight-bold text-secondary text-uppercase mb-3">Who We are</h6>
               <p className="text-primary-second mb-5">
-                Founded in 2021 in UAE, UFS is an international cargo transport agent with a global network of agents, and
-                a member of JCTrans & WOF networks.
-              </p>
-
-              <h6 className="text-secondary text-uppercase mb-3">our mission</h6>
+              Our industry forms the lifeline between the source and the consumer, the vital link: The Supply Chain.</p>
               <p className="text-primary-second mb-5">
-                We are in the business of coordinating your delivery and logistics needs, but this definition oversimplifies
-                the real work we do. In this ecosystem our industry forms the lifeline between the source and the consumer,
-                the vital link: The Supply Chain Our mission is to excel in doing the quite work that allows for the
-                movements of goods across continents and provide simple and efficient services to all our customers.
-              </p>
-
-              <h6 className="font-weight-bold text-secondary text-uppercase mb-3">our Vision</h6>
+              UFS employees, each of whom is an expert in their own fields, manage to meet the needs of its customers and partners and keep customer satisfaction at the top with its knowledge and experience, its constant urge of learning and its ability to quickly adapting new trends. We ensure that the cargo will reach their destination in the safest and the most effective way.</p>
               <p className="text-primary-second mb-5">
-                Strive to be an excellent, sustainable development and international logistics enterprise in the region
+              UFS, by the virtue of being an independent company, is in contact with multiple agencies in every country. UFS chooses the optimal vehicle and agency or the representative, with regards to the volume, transportation preferences and the type of cargo, then delivers your cargo to the point of destination with optimum time at the best price.</p>
+              <p className="text-primary-second mb-5">
+              UFS offers a wide range of logistics and freight forwarding services to meet all your shipping needs as One Stop Shop for Total Logistics Solutions.
               </p>
 
-              <div className="row g-4 mb-5">
-                <div className="col-sm-6 wow animate__animated animate__fadeIn" data-wow-delay="0.5s">
-                  <i className="fa fa-globe fa-3x text-primary mb-3"></i>
-                  <h5>Global Coverage</h5>
-                  <p className="m-0">
-                    Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam justo.
-                  </p>
-                </div>
-                <div className="col-sm-6 wow animate__animated animate__fadeIn" data-wow-delay="0.7s">
-                  <i className="fa fa-shipping-fast fa-3x text-primary mb-3"></i>
-                  <h5>On Time Delivery</h5>
-                  <p className="m-0">
-                    Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam justo.
-                  </p>
-                </div>
-              </div>
-              <a href="" className="btn btn-primary py-3 px-5">
-                Explore More
-              </a>
             </div>
           </div>
         </div>

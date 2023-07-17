@@ -2,6 +2,17 @@ import React from 'react';
 import img1 from '../../assets/home.jpg'
 
 const Carousel = () => {
+
+const MaintextStyle={
+    
+    fontWeight: 'bold',
+    textShadow: '2px 2px 4px rgba(0, 0, 0, 1)',
+    WebkitTextStrokeWidth: '1px',
+    WebkitTextStrokeColor: 'white',
+    fontSize: '60px',
+    paddingTop:'0px',
+    
+}
   return (
     <div className="container-fluid p-0 pb-5">
       <div className="owl-carousel header-carousel position-relative mb-5">
@@ -11,9 +22,11 @@ const Carousel = () => {
             <div className="container">
               <div className="row justify-content-start">
                 <div className="col-10 col-lg-8">
-                  <h5 className="text-white text-uppercase mb-3 animated slideInDown">Transport & Logistics Solution</h5>
-                  <h1 className="display-3 text-white animated slideInDown mb-4">#1 Place For Your <span className="text-primary">Logistics</span> Solution</h1>
-                  <p className="fs-5 fw-medium text-white mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
+                  
+                  <h1 className="mb-5 text-primary font-weight-bold" 
+                                      style={MaintextStyle}>UNIVERSAL <span className="text-secondary" >FREIGHT SOLUTIONS LLC</span></h1>
+                  <h1 className="display-3 text-white animated slideInDown mb-4">#1 Place For Your <span className="text-primary">Logistics</span> Solution need</h1>
+                  
                   <a href="" className="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
                   <a href="" className="btn btn-secondary py-md-3 px-md-5 me-3 animated slideInRight">Free Quote</a>
                 </div>

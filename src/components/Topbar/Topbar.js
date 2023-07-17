@@ -7,9 +7,9 @@ function Topbar() {
     <div class="row py-2 px-lg-5">
         <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
             <div class="d-inline-flex align-items-center text-white">
-                <small><i class="fa fa-phone-alt mr-2"></i>+012 345 6786</small>
+                <small><i class="fa fa-phone-alt mr-2"></i>00971-4-2507076</small>
                 <small class="px-3">|</small>
-                <small><i class="fa fa-envelope mr-2"></i>info@example.com</small>
+                <small><i class="fa fa-envelope mr-2"></i>info@ufsllcdxb.ae</small>
             </div>
         </div>
         <div class="col-lg-6 text-center text-lg-right">

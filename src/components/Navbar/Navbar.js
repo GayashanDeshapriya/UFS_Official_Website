@@ -74,7 +74,7 @@ function Navbar() {
         </div>
         <h5 className="m-0 pe-lg-5 d-none d-lg-block">
           <img src={icon1} alt="logo" width="20" height="auto" className="nav-icon" />
-          +012 123 456
+          00971-4-2507076
         </h5>
       </div>
     </nav>

@@ -19,7 +19,7 @@ function Services() {
           <div className="row g-4">
             <div
               className="col-md-6 col-lg-4 wow animate__animated animate__fadeInUp"
-              data-wow-delay="0.3s"
+              data-wow-delay="0.1s"
             >
               <div className="service-item p-4">
                 <div className="overflow-hidden mb-4">
@@ -27,14 +27,14 @@ function Services() {
                 </div>
                 <h4 className="text-secondary mb-3">Air Cargo Service</h4>
                 <p className="text-primary-second">
-                As an air freight solution provider UFS 
+                                    As an air freight solution provider UFS 
                                     handles all your concerns before they 
                                     become a hassle. Meet your time-critical deadlines and ensure safe and 
                                     smooth handling
                                     We have experience of handling
-                                     General cargo and DG shipments,
-                                     Pharma & temp control shipments and
-                                     Odd dims & project cargo
+                                    General cargo and DG shipments,
+                                    Pharma & temp control shipments and
+                                    Odd dims & project cargo
                 </p>
                 <a className="btn-slide mt-2" href="">
                   <i className="fa fa-arrow-right"></i>
@@ -52,18 +52,18 @@ function Services() {
                 </div>
                 <h4 className="text-secondary mb-3">Sea Cargo Service</h4>
                 <p className="text-primary-second">
-                Sea freight logistics is not complex with us. 
-                UFS handles your sea freight needs by 
-                going beyond the over the counter solutions 
-                or just coordinating your cargo transportation 
-                services. Our logistics as a service is 
-                empowered by our experienced team, equipped 
-                with industry knowledge, latest technology and 
-                human know-how.
-                This way, you can focus on growing your 
-                business and brand and leave the middle; the 
-                journey of your product's ocean freight 
-                shipments to UFS.
+                                    Sea freight logistics is not complex with us. 
+                                    UFS handles your sea freight needs by 
+                                    going beyond the over the counter solutions 
+                                    or just coordinating your cargo transportation 
+                                    services. Our logistics as a service is 
+                                    empowered by our experienced team, equipped 
+                                    with industry knowledge, latest technology and 
+                                    human know-how.
+                                    This way, you can focus on growing your 
+                                    business and brand and leave the middle; the 
+                                    journey of your product's ocean freight 
+                                    shipments to UFS.
                 </p>
                 <a className="btn-slide mt-2" href="">
                   <i className="fa fa-arrow-right"></i>
