@@ -30,19 +30,19 @@ function Footer() {
       <div className="container py-5">
         <div className="row g-5">
           <div className="col-lg-3 col-md-6">
-          <h4 className="text-light mb-4">Address</h4>
-                    <p className="mb-2"><i className="fa fa-map-marker-alt me-3"></i>
-                    Office 203, Bushaqer Building, Block 
-                    PO Box 35277, Al Garhoud,
-                    Dubai, UAE.</p>
-                    <p className="mb-2"><i className="fa fa-phone-alt me-3"></i>00971-4-2507076</p>
-                    <p className="mb-2"><i className="fa fa-envelope me-3"></i>info@ufsllcdxb.ae</p>
-                    <div className="d-flex pt-2">
-                        <Link className="btn btn-outline-light btn-social" to=""><i className="fab fa-twitter"></i></Link>
-                        <Link className="btn btn-outline-light btn-social" to=""><i className="fab fa-facebook-f"></i></Link>
-                        <Link className="btn btn-outline-light btn-social" to=""><i className="fab fa-youtube"></i></Link>
-                        <Link className="btn btn-outline-light btn-social" to=""><i className="fab fa-linkedin-in"></i></Link>
-                    </div>
+            <h4 className="text-light mb-4">Address</h4>
+            <p className="mb-2"><i className="fa fa-map-marker-alt me-3"></i>
+              Office 203, Bushaqer Building, Block
+              PO Box 35277, Al Garhoud,
+              Dubai, UAE.</p>
+            <p className="mb-2"><i className="fa fa-phone-alt me-3"></i>00971-4-2507076</p>
+            <p className="mb-2"><i className="fa fa-envelope me-3"></i>info@ufsllcdxb.ae</p>
+            <div className="d-flex pt-2">
+              <Link className="btn btn-outline-light btn-social" to=""><i className="fab fa-twitter"></i></Link>
+              <Link className="btn btn-outline-light btn-social" to=""><i className="fab fa-facebook-f"></i></Link>
+              <Link className="btn btn-outline-light btn-social" to=""><i className="fab fa-youtube"></i></Link>
+              <Link className="btn btn-outline-light btn-social" to=""><i className="fab fa-linkedin-in"></i></Link>
+            </div>
           </div>
           <div className="col-lg-2 col-md-6">
             {/* Empty column */}
@@ -52,15 +52,15 @@ function Footer() {
             <Link to="/about" className="btn btn-link quick-link">About Us</Link>
             <Link to="/contact" className="btn btn-link quick-link">Contact Us</Link>
             <Link to="/service" className="btn btn-link quick-link">Our Services</Link>
-            
+
           </div>
           <div className="col-lg-3 col-md-6">
-          <h4 className="text-light mb-4">Newsletter</h4>
-                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                    <div className="position-relative mx-auto" style={{maxwidth: '400px'}}>
-                        <input className="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email"/>
-                        <button type="button" className="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                    </div>
+            <h4 className="text-light mb-4">Newsletter</h4>
+            <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+            <div className="position-relative mx-auto" style={{ maxwidth: '400px' }}>
+              <input className="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email" />
+              <button type="button" className="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+            </div>
           </div>
         </div>
       </div>

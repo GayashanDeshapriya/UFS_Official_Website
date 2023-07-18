@@ -8,7 +8,7 @@ import service4 from '../../assets/service-4.jpg';
 function Services() {
   return (
     <div>
-      
+
 
       <div className="container-xxl py-5">
         <div className="container py-5">
@@ -27,20 +27,20 @@ function Services() {
                 </div>
                 <h4 className="text-secondary mb-3">Air Freight</h4>
                 <p className="text-primary-second">
-                UFS Air Freight provides a safe, efficient, and reliable means of air transportation for your time-sensitive and high-value cargo. Our air services are tailored to your unique needs, and we take advantage of our strategic partnerships with carriers & Global partners to ensure fast and efficient delivery of your goods across the world.
-                Our services can help you expand your customer reach globally through stand-alone air transport or by integrating our other inland and ocean transport modes, warehousing, and customs services, tailoring a seamless end-to-end solution. With UFS Air Freight, you can be assured of a comprehensive and reliable service that meets your specific air freight needs
+                  UFS Air Freight provides a safe, efficient, and reliable means of air transportation for your time-sensitive and high-value cargo. Our air services are tailored to your unique needs, and we take advantage of our strategic partnerships with carriers & Global partners to ensure fast and efficient delivery of your goods across the world.
+                  Our services can help you expand your customer reach globally through stand-alone air transport or by integrating our other inland and ocean transport modes, warehousing, and customs services, tailoring a seamless end-to-end solution. With UFS Air Freight, you can be assured of a comprehensive and reliable service that meets your specific air freight needs
                 </p>
                 <ul className="text-primary-second">
-                <li>	Experience in handling General Cargo & DG, Pharma / Temp Control shipments, Odd Dims & Project Cargo</li>
-                <li>	Preferential rates with all major airlines</li>
-                <li>	Guaranteed space / BSA </li>
-                <li>	Extensive network of hubs</li>
-                <li>	Air Charter services</li>
+                  <li>	Experience in handling General Cargo & DG, Pharma / Temp Control shipments, Odd Dims & Project Cargo</li>
+                  <li>	Preferential rates with all major airlines</li>
+                  <li>	Guaranteed space / BSA </li>
+                  <li>	Extensive network of hubs</li>
+                  <li>	Air Charter services</li>
                 </ul>
-                
 
-                
-                
+
+
+
               </div>
             </div>
             <div
@@ -53,20 +53,20 @@ function Services() {
                 </div>
                 <h4 className="text-secondary mb-3">Ocean Freight</h4>
                 <p className="text-primary-second">
-                We carry your shipments from port to port, from door to door, and from door to port with standard or 
-                special equipments according to your needs. With our strong global network, we are able to provide services to almost
-                 every port of the world as well with extensive knowledge and experience in unique requirements and processes for hard
+                  We carry your shipments from port to port, from door to door, and from door to port with standard or
+                  special equipments according to your needs. With our strong global network, we are able to provide services to almost
+                  every port of the world as well with extensive knowledge and experience in unique requirements and processes for hard
                   to reach geographies of the world. We are distinguished with our competitive rates, quick feedbacks and clear information flow.
                 </p>
                 <ul className="text-primary-second">
-                <li>FCL & LCL services</li>
-                <li>Consolidation services</li>
-                <li>Break Bulk & RORO services </li>
-                <li>Reefer & special equipment / ODC cargo</li>
-                <li>Special Projects & Vessel Chartering </li>
-                <li>NVOCC services</li>
+                  <li>FCL & LCL services</li>
+                  <li>Consolidation services</li>
+                  <li>Break Bulk & RORO services </li>
+                  <li>Reefer & special equipment / ODC cargo</li>
+                  <li>Special Projects & Vessel Chartering </li>
+                  <li>NVOCC services</li>
                 </ul>
-                
+
               </div>
             </div>
             <div
