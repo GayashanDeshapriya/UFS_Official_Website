@@ -9,6 +9,7 @@ const Carousel = () => {
     WebkitTextStrokeWidth: '0.35px',
     WebkitTextStrokeColor: 'white',
     paddingTop: '0px',
+    fontSize: '100px',
     
   };
   
