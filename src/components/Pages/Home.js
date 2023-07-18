@@ -35,7 +35,7 @@ function Home() {
                 <li><h6><i className="far fa-dot-circle text-primary mr-3"></i>   Unique Approach</h6></li>
                 <li><h6><i className="far fa-dot-circle text-primary mr-3"></i>   Worldwide Network</h6></li>
               </ul>
-              <a href="" className="btn btn-primary mt-3 py-2 px-4">Learn More</a>
+              
             </div>
           </div>
         </div>

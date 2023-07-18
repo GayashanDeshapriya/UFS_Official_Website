@@ -55,9 +55,9 @@ export default function ServicesHome() {
 
                 </div>
                 <div className="text-center">
-                    <a href="/Service" className="btn btn-primary mt-3 py-2 px-4">
+                    <Link to="/Service" className="btn btn-primary mt-3 py-2 px-4">
                         Read More
-                    </a>
+                    </Link>
                 </div>
             </div>
 

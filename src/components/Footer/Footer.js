@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-function Footer() {
+
+function Footer({ onLinkClick }) {
   useEffect(() => {
     const handleLinkClick = () => {
       // Scroll to the top of the page

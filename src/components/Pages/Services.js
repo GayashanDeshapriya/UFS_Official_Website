@@ -77,12 +77,19 @@ function Services() {
                 <div className="overflow-hidden mb-4">
                   <img src={service3} className="img-fluid" alt="" />
                 </div>
-                <h4 className="text-secondary mb-3">Warehousing & 3PL Services</h4>
-                <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                <a className="btn-slide mt-2" href="">
-                  <i className="fa fa-arrow-right"></i>
-                  <span>Read More</span>
-                </a>
+                <h4 className="text-secondary mb-3">Cross Border Logistics</h4>
+                <p className='text-primary-second'>Non-trucker own carrier operator with experience in GCC & ME market with reliable trucking partnership
+                  in running specific route within GCC and ME countries. It associates all sorts of service to meet with Shipper’s
+                  schedule. Service integrated with Bond-trucking schedule, customs brokers and Cross-border trucker cross-docking
+                  both Full Truckload (FTL) and Less Than Truckload (LTL). Specialized and Intermodal partners, which allows us
+                  to offer a high degree of flexibility while maintaining competitive pricing.</p>
+                <ul className="text-primary-second">
+                  <li>Full Truckload (FTL)</li>
+                  <li>Less Than Truckload (LTL)</li>
+                  <li>Special equipment and project cargo transportation </li>
+
+                </ul>
+
               </div>
             </div>
             <div
@@ -93,12 +100,17 @@ function Services() {
                 <div className="overflow-hidden mb-4">
                   <img src={service4} className="img-fluid" alt="" />
                 </div>
-                <h4 className="text-secondary mb-3">Customs clearance & Delivery</h4>
-                <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                <a className="btn-slide mt-2" href="">
-                  <i className="fa fa-arrow-right"></i>
-                  <span>Read More</span>
-                </a>
+                <h4 className="text-secondary mb-3">Warehousing & 3PL Services</h4>
+                <p className='text-primary-second'>Apart from general goods, UFS provides unique and exclusive 3PL services for special products such as exercise goods,
+                  temp control cargo, food stuff, project cargo, etc.
+                  UFS provide 3PL solutions for long term, short term, dedicated and common facilities in Jebel Ali Free Zone and outside
+                  Free Zone Area.
+                </p>
+                <ul className='text-primary-second'>
+                  <li>Storage facility for Temp control and non-Temp control cargo</li>
+                  <li>3PL and other value-added service</li>
+                </ul>
+
               </div>
             </div>
             <div
@@ -109,29 +121,29 @@ function Services() {
                 <div className="overflow-hidden mb-4">
                   <img src={service1} className="img-fluid" alt="" />
                 </div>
-                <h4 className="text-secondary mb-3">service4</h4>
-                <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                <a className="btn-slide mt-2" href="">
-                  <i className="fa fa-arrow-right"></i>
-                  <span>Read More</span>
-                </a>
+                <h4 className="text-secondary mb-3">Customs Clearance & Delivery </h4>
+                <p className='text-primary-second'>UFS has the experience & capability of handling all types of customs declaration such as General Trade, Repair & Return goods,
+                  Sample Advertising products, Temporary Import & Export, Free Zone Imports & Exports, all kinds of Processing Trade Returned
+                  Goods, ATA documents, Integrated Customs Clearance, etc.
+                  Our dedicated delivery team is available to deliver goods at your premises 24/7 as per your convenience to ensure there is no
+                  interruption to the production line/supply chain.
+                </p>
+                <ul className='text-primary-second'>
+                  <li>A wide range of pick-up and delivery fleet</li>
+                  <li>Professional one-stop ground operation service</li>
+                  <li>24/7 Customs Clearance service</li>
+                  <li>Pre Customs Clearance service</li>
+                  <li>Standardized Operation process</li>
+                  <li>DAP/DDP services globally</li>
+                </ul>
+                
               </div>
             </div>
             <div
               className="col-md-6 col-lg-4 wow animate__animated animate__fadeInUp"
               data-wow-delay="0.7s"
             >
-              <div className="service-item p-4">
-                <div className="overflow-hidden mb-4">
-                  <img src={service1} className="img-fluid" alt="" />
-                </div>
-                <h4 className="text-secondary mb-3">service5</h4>
-                <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                <a className="btn-slide mt-2" href="">
-                  <i className="fa fa-arrow-right"></i>
-                  <span>Read More</span>
-                </a>
-              </div>
+
             </div>
           </div>
         </div>
