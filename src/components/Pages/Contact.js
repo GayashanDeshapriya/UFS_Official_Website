@@ -8,11 +8,12 @@ function Contact () {
             <div className="row">
                 <div className="col-lg-5 pb-4 pb-lg-0">
                     <div className="bg-primary text-light text-center p-4">
-                        <h4 className="m-0"><i className="fa fa-map-marker-alt text-white mr-2"></i>123 Street, New York, USA</h4>
+                        <h5 className="m-0"><i className="fa fa-map-marker-alt text-white mr-2"></i>Bushaqer Building,Al Garhoud,Dubai, UAE.</h5>
                     </div>
                     <iframe style={{ width: '100%', height: '470px', border: '0' }}
-                       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3213364.9176379982!2d53.606208774527715!3d23.75348295061764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e48dfb1ab12bd%3A0x33d32f56c0080aa7!2sUnited%20Arab%20Emirates!5e0!3m2!1sen!2slk!4v1688666795718!5m2!1sen!2slk"
+                       src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3608.609556175961!2d55.338421815010605!3d25.250072483871605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjXCsDE1JzAwLjMiTiA1NcKwMjAnMjYuMiJF!5e0!3m2!1sen!2slk!4v1689681281179!5m2!1sen!2slk"
                         frameborder="0"  allowFullScreen="" aria-hidden="false" tabIndex="0"></iframe>
+                        
                 </div>
                 <div className="col-lg-7">
                     <h6 className="text-primary text-uppercase font-weight-bold">Contact Us</h6>

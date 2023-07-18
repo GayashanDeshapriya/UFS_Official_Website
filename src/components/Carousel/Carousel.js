@@ -15,9 +15,7 @@ const Carousel = () => {
 
   const textStyle = {
     fontWeight: 'bold',
-    paddingTop: '0px',
     
-    paddingTop: '40px',
   };
 
   return (
@@ -34,7 +32,8 @@ const Carousel = () => {
                 <div class="container text-center py-5">
             <h1 class="text-primary mb-4">Safe & Faster</h1>
             <h1 class="text-white display-3 mb-5">Logistics Services</h1>
-            <h3 className="display-3 text-primary animated slideInDown mb-4 " style={MaintextStyle}>UNIVERSAL <span className="text-secondary">FREIGHT SOLUTIONS LLC</span></h3>
+            <h2 className="display-3 text-primary  mb-1 " style={MaintextStyle}>UNIVERSAL <span className="text-secondary">FREIGHT SOLUTIONS LLC</span></h2>
+            <h6 class="display-3 text-white  mb-5" style={textStyle}>#1 Place For Your Logistics Solution</h6>
             <div class="mx-auto" style={{ width: '100%', maxWidth: '600px' }}>
                
             </div>
