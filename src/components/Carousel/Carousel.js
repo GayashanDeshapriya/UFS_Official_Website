@@ -11,53 +11,53 @@ const Carousel = () => {
     paddingTop: '0px',
     fontSize: '6vw',
 
-    
+
   };
-  
+
 
   const textStyle = {
     fontWeight: 'bold',
     fontSize: '3vw',
-    
+
   };
 
   return (
     <div className="container-fluid p-0 pb-5">
       <div className="owl-carousel header-carousel position-relative mb-5">
         <div className="owl-carousel-item position-relative">
-        <div className='bg-image'>
-          <div className='img-fluid '>
-          <img className="img-fluid" src={img1} style={{ width: '100%',  }} alt="" />
-          </div>
-        
-        
-
-          <div className="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style={{ background: 'rgba(1, 5, 20, .6)' }}>
-          
-            <div className="container">
-            <div className='wow animate__animated animate__fadeInUp'>
-              <div className="row justify-content-start">
-                
-                
-                <div class="container text-center py-5">
-            
-            <h2 className="display-3 text-primary  mb-1 " style={MaintextStyle}>UNIVERSAL <span className="text-secondary">FREIGHT SOLUTIONS LLC</span></h2>
-            <h4 class="text-white text-uppercase mb-3 animated slideInDown" style={textStyle}>#1 Place For Your Freight & Logistics need</h4>
-            <div class="mx-auto" style={{ width: '100%', maxWidth: '600px' }}>
-               
+          <div className='bg-image'>
+            <div className='img-fluid '>
+              <img className="img-fluid" src={img1} style={{ width: '100%', }} alt="" />
             </div>
-        </div>
-                  
-                </div>
+
+
+
+            <div className="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style={{ background: 'rgba(1, 5, 20, .6)' }}>
+
+              <div className="container">
+                <div className='wow animate__animated animate__fadeInUp'>
+                  <div className="row justify-content-start">
+
+
+                    <div class="container text-center py-1">
+
+                      <h2 className="display-3 text-primary  mb-4 " style={MaintextStyle}>UNIVERSAL <span className="text-secondary">FREIGHT SOLUTIONS LLC</span></h2>
+                      <h4 class="text-white text-uppercase mb-5 animated slideInDown" style={textStyle}>#1 Place For Your Freight & Logistics need</h4>
+                      <div class="mx-auto" style={{ width: '100%', maxWidth: '600px' }}>
+
+                      </div>
+                    </div>
+
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      </div>
-    
+    </div>
+
   );
-  
-  }
+
+}
 export default Carousel;
