@@ -1,17 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import logo from '../../assets/ufs.png';
 import icon1 from '../../assets/phone-solid.svg';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
 
 function Navbar() {
-  const [activeItem, setActiveItem] = useState('Home');
   const [fix, setFix] = useState(false);
+  const location = useLocation();
 
-  const handleItemClick = (itemName) => {
-    setActiveItem(itemName);
-
-    // Scroll to the top of the page
+  // Scroll to the top of the page
+  const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
@@ -35,7 +33,7 @@ function Navbar() {
 
   return (
     <nav className={`navbar navbar-expand-lg bg-white navbar-light shadow border-top border-5 border-primary ${fix ? 'fixed-top' : ''} p-0`}>
-      <a href="" className="navbar-brand d-flex align-items-center px-4 px-lg-5">
+      <a href="/" className="navbar-brand d-flex align-items-center px-4 px-lg-5" onClick={scrollToTop}>
         <img src={logo} alt="logo" width="160" height="auto" />
       </a>
       <button type="button" className="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -43,32 +41,16 @@ function Navbar() {
       </button>
       <div className="collapse navbar-collapse" id="navbarCollapse">
         <div className="navbar-nav ms-auto p-4 p-lg-0">
-          <Link
-            to="/"
-            className={`nav-item nav-link ${activeItem === 'Home' ? 'active' : ''}`}
-            onClick={() => handleItemClick('Home')}
-          >
+          <Link to="/" className={`nav-item nav-link ${location.pathname === '/' ? 'active' : ''}`} onClick={scrollToTop}>
             Home
           </Link>
-          <Link
-            to="/about"
-            className={`nav-item nav-link ${activeItem === 'About' ? 'active' : ''}`}
-            onClick={() => handleItemClick('About')}
-          >
+          <Link to="/about" className={`nav-item nav-link ${location.pathname === '/about' ? 'active' : ''}`} onClick={scrollToTop}>
             About
           </Link>
-          <Link
-            to="/service"
-            className={`nav-item nav-link ${activeItem === 'Services' ? 'active' : ''}`}
-            onClick={() => handleItemClick('Services')}
-          >
+          <Link to="/service" className={`nav-item nav-link ${location.pathname === '/service' ? 'active' : ''}`} onClick={scrollToTop}>
             Services
           </Link>
-          <Link
-            to="/contact"
-            className={`nav-item nav-link ${activeItem === 'Contact' ? 'active' : ''}`}
-            onClick={() => handleItemClick('Contact')}
-          >
+          <Link to="/contact" className={`nav-item nav-link ${location.pathname === '/contact' ? 'active' : ''}`} onClick={scrollToTop}>
             Contact
           </Link>
         </div>
