@@ -42,7 +42,7 @@ const Carousel = () => {
                 <div class="container text-center py-5">
             
             <h2 className="display-3 text-primary  mb-1 " style={MaintextStyle}>UNIVERSAL <span className="text-secondary">FREIGHT SOLUTIONS LLC</span></h2>
-            <h4 class="text-white text-uppercase mb-3 animated slideInDown" style={textStyle}>#1 Place For Your Logistics Solution need</h4>
+            <h4 class="text-white text-uppercase mb-3 animated slideInDown" style={textStyle}>#1 Place For Your Freight & Logistics need</h4>
             <div class="mx-auto" style={{ width: '100%', maxWidth: '600px' }}>
                
             </div>
