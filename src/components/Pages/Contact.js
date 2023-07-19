@@ -1,6 +1,38 @@
 import React from 'react'
+import emailjs from '@emailjs/browser';
+import { useRef, useState} from 'react';
+import { useInView } from "react-intersection-observer";
+
+
+
+
 
 const Contact =() =>{
+
+    const form = useRef();
+
+    const [notification, setNotification] = useState('');
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_ly4n5rc', 'template_b376xsz', form.current, 'F1Jzrgq6nIX5L8e6Y')
+      .then((result) => {
+          console.log(result.text);
+          setNotification('Email sent !!');
+          setNotification('Failed to send email. Please try again later.');
+      }, (error) => {
+          console.log(error.text);
+      });
+
+      e.target.reset();
+  };
+
+  const [inView] = useInView({
+    threshold: 0,
+    triggerOnce: true,
+  });
+
     
   return (
     <div className="container-fluid py-5">
@@ -20,7 +52,7 @@ const Contact =() =>{
                     <h1 className="text-secondary mb-4">Contact For Any Queries</h1>
                     <div className="contact-form bg-light" style={{padding: '30px',backgroundColor: 'rgba(0, 0, 0, 0)'}}>
                         <div id="success"></div>
-                        <form name="sentMessage" id="contactForm" noValidate="novalidate">
+                        <form ref={form} onSubmit={sendEmail} name="sentMessage" id="contactForm" noValidate="novalidate">
                             <div className="control-group">
                                 <input 
                                 type="text" 
@@ -67,6 +99,7 @@ const Contact =() =>{
                             <div>
                                 <button className="btn btn-primary py-3 px-4" type="submit" id="sendMessageButton">Send
                                     Message</button>
+                                    {notification}
                             </div>
                         </form>
                     </div>
