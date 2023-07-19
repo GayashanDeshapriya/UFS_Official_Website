@@ -35,7 +35,7 @@ const Carousel = () => {
             <div className="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style={{ background: 'rgba(1, 5, 20, .6)' }}>
 
               <div className="container">
-                <div className='wow animate__animated animate__fadeInUp'>
+                <div className='wow animate__animated animate__fadeInUp animate__delay-1s'>
                   <div className="row justify-content-start">
 
 
