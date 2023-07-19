@@ -1,4 +1,4 @@
-import { Routes , Route} from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import React, { useState } from 'react';
 import Navbar from './components/Navbar/Navbar';
 import Topbar from './components/Topbar/Topbar';
@@ -9,7 +9,7 @@ import Services from './components/Pages/Services';
 import Contact from './components/Pages/Contact';
 
 
-const App=() =>{
+const App = () => {
 
   const [activeNavItem, setActiveNavItem] = useState('');
 
@@ -17,30 +17,30 @@ const App=() =>{
     setActiveNavItem(navItem);
   };
 
-  return(
+  return (
     <>
-    <Topbar/>
-    <Navbar activeItem={activeNavItem}/>
+      <Topbar />
+      <Navbar activeItem={activeNavItem} />
 
-    <div>
-      
-      <Routes>
+      <div>
 
-        <Route path="/" element={<Home/>}/>
-        <Route path="/about" element={<About/>}/>
-        <Route path="/service" element={<Services/>}/>
-        <Route path="/contact" element={<Contact/>}/>
+        <Routes>
 
-      </Routes>
-    
-     <Footer onQuickLinkClick={handleQuickLinkClick}/>
-       
-    </div>
-    
-    
-</>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/service" element={<Services />} />
+          <Route path="/contact" element={<Contact />} />
+
+        </Routes>
+
+        <Footer onQuickLinkClick={handleQuickLinkClick} />
+
+      </div>
+
+
+    </>
   );
-  
+
 }
 
 export default App;
