@@ -1,5 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
-import React, { useState } from 'react';
+import { Routes , Route} from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import Topbar from './components/Topbar/Topbar';
 import Footer from './components/Footer/Footer';
@@ -9,38 +8,31 @@ import Services from './components/Pages/Services';
 import Contact from './components/Pages/Contact';
 
 
-const App = () => {
+function App() {
 
-  const [activeNavItem, setActiveNavItem] = useState('');
-
-  const handleQuickLinkClick = (navItem) => {
-    setActiveNavItem(navItem);
-  };
-
-  return (
+  return(
     <>
-      <Topbar />
-      <Navbar activeItem={activeNavItem} />
+    <Topbar/>
+    <Navbar/>
 
-      <div>
+    <div>
+      <Routes>
 
-        <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/about" element={<About/>}/>
+        <Route path="/service" element={<Services/>}/>
+        <Route path="/contact" element={<Contact/>}/>
 
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/service" element={<Services />} />
-          <Route path="/contact" element={<Contact />} />
-
-        </Routes>
-
-        <Footer onQuickLinkClick={handleQuickLinkClick} />
-
-      </div>
-
-
-    </>
+      </Routes>
+    
+     <Footer/>
+       
+    </div>
+    
+    
+</>
   );
-
+  
 }
 
 export default App;

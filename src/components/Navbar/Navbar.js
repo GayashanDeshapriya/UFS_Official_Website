@@ -1,13 +1,24 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import logo from '../../assets/ufs.png';
 import icon1 from '../../assets/phone-solid.svg';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
-const Navbar = ({ activeNavItem }) => {
+function Navbar() {
+  const [activeItem, setActiveItem] = useState('Home');
   const [fix, setFix] = useState(false);
 
-  const handleScroll = () => {
+  const handleItemClick = (itemName) => {
+    setActiveItem(itemName);
+
+    // Scroll to the top of the page
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
+  const setFixed = () => {
     if (window.scrollY >= 50) {
       setFix(true);
     } else {
@@ -16,23 +27,15 @@ const Navbar = ({ activeNavItem }) => {
   };
 
   useEffect(() => {
-    document.addEventListener('scroll', handleScroll);
+    document.addEventListener('scroll', setFixed);
     return () => {
-      document.removeEventListener('scroll', handleScroll);
+      document.removeEventListener('scroll', setFixed);
     };
   }, []);
 
-  const handleItemClick = () => {
-    // Scroll to the top of the page
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
-  };
-
   return (
     <nav className={`navbar navbar-expand-lg bg-white navbar-light shadow border-top border-5 border-primary ${fix ? 'fixed-top' : ''} p-0`}>
-      <a href="/" className="navbar-brand d-flex align-items-center px-4 px-lg-5">
+      <a href="" className="navbar-brand d-flex align-items-center px-4 px-lg-5">
         <img src={logo} alt="logo" width="160" height="auto" />
       </a>
       <button type="button" className="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -42,29 +45,29 @@ const Navbar = ({ activeNavItem }) => {
         <div className="navbar-nav ms-auto p-4 p-lg-0">
           <Link
             to="/"
-            className={`nav-item nav-link ${activeNavItem === 'Home' ? 'active' : ''}`}
-            onClick={handleItemClick}
+            className={`nav-item nav-link ${activeItem === 'Home' ? 'active' : ''}`}
+            onClick={() => handleItemClick('Home')}
           >
             Home
           </Link>
           <Link
             to="/about"
-            className={`nav-item nav-link ${activeNavItem === 'About' ? 'active' : ''}`}
-            onClick={handleItemClick}
+            className={`nav-item nav-link ${activeItem === 'About' ? 'active' : ''}`}
+            onClick={() => handleItemClick('About')}
           >
             About
           </Link>
           <Link
             to="/service"
-            className={`nav-item nav-link ${activeNavItem === 'Services' ? 'active' : ''}`}
-            onClick={handleItemClick}
+            className={`nav-item nav-link ${activeItem === 'Services' ? 'active' : ''}`}
+            onClick={() => handleItemClick('Services')}
           >
             Services
           </Link>
           <Link
             to="/contact"
-            className={`nav-item nav-link ${activeNavItem === 'Contact' ? 'active' : ''}`}
-            onClick={handleItemClick}
+            className={`nav-item nav-link ${activeItem === 'Contact' ? 'active' : ''}`}
+            onClick={() => handleItemClick('Contact')}
           >
             Contact
           </Link>
@@ -76,6 +79,6 @@ const Navbar = ({ activeNavItem }) => {
       </div>
     </nav>
   );
-};
+}
 
 export default Navbar;
