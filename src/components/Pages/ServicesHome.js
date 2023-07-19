@@ -1,12 +1,21 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 export default function ServicesHome() {
+    const location = useLocation();
     const container = {
         width: '100%',
         paddingRight: '15px',
         paddingLeft: '15px',
         marginRight: 'auto',
         marginLeft: 'auto',
+    };
+
+    // Scroll to the top of the page
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
     };
 
     return (
@@ -35,7 +44,7 @@ export default function ServicesHome() {
 
                     </div>
                     <div className="col-lg-3 col-md-6 text-center mb-5">
-                        <div className="d-flex align-items-center justify-content-center bg-primary mb-4 p-4"style={{ borderRadius: '10px' }}>
+                        <div className="d-flex align-items-center justify-content-center bg-primary mb-4 p-4" style={{ borderRadius: '10px' }}>
                             <i className="fa fa-2x fa-truck text-secondary pr-3" ></i>
                             <h6 className="text-white font-weight-medium m-0">Cross Border Logistics</h6>
                         </div>
@@ -55,9 +64,10 @@ export default function ServicesHome() {
 
                 </div>
                 <div className="text-center">
-                    <Link to="/Service" className="btn btn-primary mt-3 py-2 px-4">
+                    <Link to="/service" className={`btn btn-primary mt-3 py-2 px-4 ${location.pathname === '/service' ? 'active' : ''}`} onClick={scrollToTop}>
                         Read More
                     </Link>
+
                 </div>
             </div>
 
