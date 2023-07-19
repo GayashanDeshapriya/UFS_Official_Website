@@ -53,7 +53,7 @@ const Footer = ({ onQuickLinkClick }) => {
           </div>
           <div className="col-lg-4 col-md-6">
             <h4 className="text-light mb-4">Quick Links</h4>
-            <Link to="/about" className="btn btn-link quick-link" onClick={() => handleQuickLinkClick('home')}>About Us</Link>
+            <Link to="/about" className="btn btn-link quick-link" >About Us</Link>
             <Link to="/contact" className="btn btn-link quick-link">Contact Us</Link>
             <Link to="/service" className="btn btn-link quick-link">Our Services</Link>
           </div>
