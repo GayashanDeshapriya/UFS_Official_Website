@@ -1,6 +1,5 @@
 import React from 'react';
 import img1 from '../../assets/home1.jpg';
-import './Carousel.css'
 
 const Carousel = () => {
   const MaintextStyle = {
@@ -10,6 +9,7 @@ const Carousel = () => {
     WebkitTextStrokeColor: 'white',
     paddingTop: '0px',
     fontSize: '6vw',
+    
 
 
   };
