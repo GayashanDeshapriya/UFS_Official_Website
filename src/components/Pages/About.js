@@ -1,9 +1,6 @@
 import React from 'react';
 import 'animate.css';
-import Navbar from '../Navbar/Navbar';
 import img1 from '../../assets/about.jpg';
-import Topbar from '../Topbar/Topbar';
-import Footer from '../Footer/Footer';
 import './pages.css';
 
 function About() {

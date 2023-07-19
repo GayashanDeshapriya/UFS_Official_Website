@@ -22,7 +22,7 @@ export default function ServicesHome() {
         <div className="container-fluid pt-1" style={container}>
             <div className="container">
                 <div className="text-center pb-2">
-                    <h6 className="text-primary text-uppercase font-weight-bold"></h6>
+                    
                     <h1 className="mb-4 text-secondary">Best Logistic Services</h1>
 
                 </div>
