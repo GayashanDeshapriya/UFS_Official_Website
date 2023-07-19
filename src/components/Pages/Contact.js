@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Contact () {
+const Contact =() =>{
     
   return (
     <div className="container-fluid py-5">
@@ -22,24 +22,46 @@ function Contact () {
                         <div id="success"></div>
                         <form name="sentMessage" id="contactForm" noValidate="novalidate">
                             <div className="control-group">
-                                <input type="text" className="form-control border-0 p-4" id="name" placeholder="Your Name"
-                                    required="required" data-validation-required-message="Please enter your name" />
+                                <input 
+                                type="text" 
+                                className="form-control border-0 p-4" 
+                                id="name" 
+                                name="name"
+                                placeholder="Your Name"
+                                required="required" 
+                                data-validation-required-message="Please enter your name" />
                                 <p className="help-block text-danger"></p>
                             </div>
                             <div className="control-group">
-                                <input type="email" className="form-control border-0 p-4" id="email" placeholder="Your Email"
-                                    required="required" data-validation-required-message="Please enter your email" />
+                                <input 
+                                type="email" 
+                                className="form-control border-0 p-4" 
+                                id="email" 
+                                name="email"
+                                placeholder="Your Email"
+                                required="required" 
+                                data-validation-required-message="Please enter your email" />
                                 <p className="help-block text-danger"></p>
                             </div>
                             <div className="control-group">
-                                <input type="text" className="form-control border-0 p-4" id="subject" placeholder="Subject"
-                                    required="required" data-validation-required-message="Please enter a subject" />
+                                <input type="text" 
+                                className="form-control border-0 p-4" 
+                                id="subject" 
+                                name="subject"
+                                placeholder="Subject"
+                                required="required" 
+                                data-validation-required-message="Please enter a subject" />
                                 <p className="help-block text-danger"></p>
                             </div>
                             <div className="control-group">
-                                <textarea className="form-control border-0 py-3 px-4" rows="3" id="message" placeholder="Message"
-                                    required="required"
-                                    data-validation-required-message="Please enter your message"></textarea>
+                                <textarea 
+                                className="form-control border-0 py-3 px-4" 
+                                rows="3" 
+                                id="message" 
+                                name="message"
+                                placeholder="Message"
+                                required="required"
+                                data-validation-required-message="Please enter your message"></textarea>
                                 <p className="help-block text-danger"></p>
                             </div>
                             <div>
