@@ -10,6 +10,8 @@ function Topbar() {
                         <small><i class="fa fa-phone-alt mr-2"></i>00971-4-2507076</small>
                         <small class="px-3">|</small>
                         <small><i class="fa fa-envelope mr-2"></i>info@ufsllcdxb.ae</small>
+                        <small class="px-3">|</small>
+                        <small><i class=""></i>UNIVERSAL FREIGHT SOLUTIONS LLC</small>
                     </div>
                 </div>
                 <div class="col-lg-6 text-center text-lg-right">
