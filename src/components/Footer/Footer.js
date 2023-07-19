@@ -1,8 +1,11 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
+const Footer = ({ onQuickLinkClick }) => {
+  const handleQuickLinkClick = (navItem) => {
+    onQuickLinkClick(navItem);
+  };
 
-function Footer({ onLinkClick }) {
   useEffect(() => {
     const handleLinkClick = () => {
       // Scroll to the top of the page
@@ -50,15 +53,14 @@ function Footer({ onLinkClick }) {
           </div>
           <div className="col-lg-4 col-md-6">
             <h4 className="text-light mb-4">Quick Links</h4>
-            <Link to="/about" className="btn btn-link quick-link">About Us</Link>
+            <Link to="/about" className="btn btn-link quick-link" onClick={() => handleQuickLinkClick('home')}>About Us</Link>
             <Link to="/contact" className="btn btn-link quick-link">Contact Us</Link>
             <Link to="/service" className="btn btn-link quick-link">Our Services</Link>
-
           </div>
           <div className="col-lg-3 col-md-6">
             <h4 className="text-light mb-4">Newsletter</h4>
             <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-            <div className="position-relative mx-auto" style={{ maxwidth: '400px' }}>
+            <div className="position-relative mx-auto" style={{ maxWidth: '400px' }}>
               <input className="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email" />
               <button type="button" className="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
             </div>

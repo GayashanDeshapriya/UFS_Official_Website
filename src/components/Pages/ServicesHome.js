@@ -10,7 +10,7 @@ export default function ServicesHome() {
     };
 
     return (
-        <div className="container-fluid pt-5" style={container}>
+        <div className="container-fluid pt-1" style={container}>
             <div className="container">
                 <div className="text-center pb-2">
                     <h6 className="text-primary text-uppercase font-weight-bold">Our Services</h6>

@@ -1,4 +1,5 @@
 import { Routes , Route} from 'react-router-dom';
+import React, { useState } from 'react';
 import Navbar from './components/Navbar/Navbar';
 import Topbar from './components/Topbar/Topbar';
 import Footer from './components/Footer/Footer';
@@ -8,14 +9,21 @@ import Services from './components/Pages/Services';
 import Contact from './components/Pages/Contact';
 
 
-function App() {
+const App=() =>{
+
+  const [activeNavItem, setActiveNavItem] = useState('');
+
+  const handleQuickLinkClick = (navItem) => {
+    setActiveNavItem(navItem);
+  };
 
   return(
     <>
     <Topbar/>
-    <Navbar/>
+    <Navbar activeItem={activeNavItem}/>
 
     <div>
+      
       <Routes>
 
         <Route path="/" element={<Home/>}/>
@@ -25,7 +33,7 @@ function App() {
 
       </Routes>
     
-     <Footer/>
+     <Footer onQuickLinkClick={handleQuickLinkClick}/>
        
     </div>
     
