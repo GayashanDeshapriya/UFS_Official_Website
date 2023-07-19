@@ -1,5 +1,5 @@
 import React from 'react';
-import img1 from '../../assets/home.jpg';
+import img1 from '../../assets/home1.jpg';
 import './Carousel.css'
 
 const Carousel = () => {
