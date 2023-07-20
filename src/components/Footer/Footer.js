@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const Footer = ({ onQuickLinkClick }) => {
-  
+
 
   useEffect(() => {
     const handleLinkClick = () => {
@@ -46,7 +46,7 @@ const Footer = ({ onQuickLinkClick }) => {
               <Link className="btn btn-outline-light btn-social" to=""><i className="fab fa-linkedin-in"></i></Link>
             </div>
           </div>
-          
+
           <div className="col-lg-4 col-md-6">
             <h4 className="text-light mb-4">Quick Links</h4>
             <Link to="/about" className="btn btn-link quick-link" >About Us</Link>
