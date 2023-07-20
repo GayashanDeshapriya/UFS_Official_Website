@@ -3,6 +3,7 @@ import service1 from '../../assets/service-1.jpg';
 import service2 from '../../assets/service-2.jpg';
 import service3 from '../../assets/service-3.jpg';
 import service4 from '../../assets/service-4.jpg';
+import service7 from '../../assets/service-7.jpg';
 
 
 function Services() {
@@ -75,7 +76,7 @@ function Services() {
             >
               <div className="service-item p-4">
                 <div className="overflow-hidden mb-4">
-                  <img src={service3} className="img-fluid" alt="" />
+                  <img src={service7} className="img-fluid" alt="" />
                 </div>
                 <h4 className="text-secondary mb-3">Cross Border Logistics</h4>
                 <p className='text-primary-second'>Non-trucker own carrier operator with experience in GCC & ME market with reliable trucking partnership
@@ -98,7 +99,7 @@ function Services() {
             >
               <div className="service-item p-4">
                 <div className="overflow-hidden mb-4">
-                  <img src={service4} className="img-fluid" alt="" />
+                  <img src={service3} className="img-fluid" alt="" />
                 </div>
                 <h4 className="text-secondary mb-3">Warehousing & 3PL Services</h4>
                 <p className='text-primary-second'>Apart from general goods, UFS provides unique and exclusive 3PL services for special products such as exercise goods,
@@ -119,7 +120,7 @@ function Services() {
             >
               <div className="service-item p-4">
                 <div className="overflow-hidden mb-4">
-                  <img src={service1} className="img-fluid" alt="" />
+                  <img src={service4} className="img-fluid" alt="" />
                 </div>
                 <h4 className="text-secondary mb-3">Customs Clearance & Delivery </h4>
                 <p className='text-primary-second'>UFS has the experience & capability of handling all types of customs declaration such as General Trade, Repair & Return goods,
