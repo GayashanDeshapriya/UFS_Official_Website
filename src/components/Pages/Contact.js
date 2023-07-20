@@ -13,26 +13,26 @@ const Contact = () => {
         e.preventDefault();
 
         if (form.current.checkValidity()) {
-        emailjs
-            .sendForm('service_ly4n5rc', 'template_b376xsz', form.current, 'F1Jzrgq6nIX5L8e6Y')
-            .then(
-                (result) => {
-                    console.log(result.text);
-                    setNotification('Email sent!!');
-                },
-                (error) => {
-                    console.log(error.text);
-                    setNotification('Failed to send email. Please try again later.');
-                }
-            );
+            emailjs
+                .sendForm('service_ly4n5rc', 'template_b376xsz', form.current, 'F1Jzrgq6nIX5L8e6Y')
+                .then(
+                    (result) => {
+                        console.log(result.text);
+                        setNotification('Email sent!!');
+                    },
+                    (error) => {
+                        console.log(error.text);
+                        setNotification('Failed to send email. Please try again later.');
+                    }
+                );
 
-        e.target.reset();
-        setTimeout(() => {
-            setNotification('');
-        }, 3000);
-    }else {
-        form.current.reportValidity();
-      }
+            e.target.reset();
+            setTimeout(() => {
+                setNotification('');
+            }, 3000);
+        } else {
+            form.current.reportValidity();
+        }
     };
 
     const [inView] = useInView({
@@ -53,7 +53,7 @@ const Contact = () => {
                             </h5>
                         </div>
                         <iframe
-                            style={{ width: '100%', height: '470px', border: '0'}}
+                            style={{ width: '100%', height: '470px', border: '0' }}
                             src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3608.609556175961!2d55.338421815010605!3d25.250072483871605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjXCsDE1JzAwLjMiTiA1NcKwMjAnMjYuMiJF!5e0!3m2!1sen!2slk!4v1689681281179!5m2!1sen!2slk"
                             frameBorder="0"
                             allowFullScreen=""
@@ -62,7 +62,7 @@ const Contact = () => {
                         ></iframe>
                     </div>
                     <div className="col-lg-7">
-                       
+
                         <h1 className="text-secondary mb-4">Contact Us</h1>
                         <div className="contact-form bg-light" style={{ padding: '30px', backgroundColor: 'rgba(0, 0, 0, 0)' }}>
                             <div id="success"></div>
