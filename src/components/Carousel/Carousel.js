@@ -7,10 +7,8 @@ const Carousel = () => {
     textShadow: '2px 2px 4px rgba(0, 0, 0, 1)',
     WebkitTextStrokeWidth: '0.35px',
     WebkitTextStrokeColor: 'white',
-    paddingTop: '0px',
     fontSize: '6vw',
   };
-
 
   const textStyle = {
     fontWeight: 'bold',

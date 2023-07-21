@@ -18,7 +18,7 @@ const Contact = () => {
                 .then(
                     (result) => {
                         console.log(result.text);
-                        setNotification('Email sent!!');
+                        setNotification('Message sent!!');
                     },
                     (error) => {
                         console.log(error.text);
