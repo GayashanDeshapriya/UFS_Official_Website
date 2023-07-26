@@ -14,8 +14,9 @@ function Services() {
       <div className="container-xxl py-5">
         <div className="container py-5">
           <div className="text-center wow fadeInUp" data-wow-delay="0.10s">
-            <h6 className="text-primary text-uppercase">Our Services</h6>
-            <h1 className="text-secondary mb-5">Explore Our Services</h1>
+            
+            <h5 className="text-primary text-uppercase mb-2">Explore Our Services</h5>
+            <h2 className="mb-5 text-primary font-weight-bold" style={{ fontWeight: 'bold' }}>UNIVERSAL <span className="text-secondary" >FREIGHT SOLUTIONS LLC</span></h2>
           </div>
           <div className="row g-4">
             <div

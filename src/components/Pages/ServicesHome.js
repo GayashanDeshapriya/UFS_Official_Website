@@ -21,11 +21,7 @@ export default function ServicesHome() {
     return (
         <div className="container-fluid pt-1" style={container}>
             <div className="container">
-                <div className="text-center pb-2">
-                    
-                    <h1 className="mb-4 text-secondary">Best Logistic Services</h1>
 
-                </div>
                 <div className="row pb-3">
                     <div className="col-lg-3 col-md-6 text-center mb-5">
                         <div className="d-flex align-items-center justify-content-center bg-primary mb-4 p-4" style={{ borderRadius: '10px' }}>

@@ -62,8 +62,9 @@ const Contact = () => {
                         ></iframe>
                     </div>
                     <div className="col-lg-7">
-
-                        <h1 className="text-secondary mb-4">Contact Us</h1>
+                        
+                        <h2 className="mb-4 text-primary font-weight-bold" style={{ fontWeight: 'bold' }}>UNIVERSAL <span className="text-secondary" >FREIGHT SOLUTIONS LLC</span></h2>
+                        <h3 className="text-secondary mb-2">Contact Us</h3>
                         <div className="contact-form bg-light" style={{ padding: '30px', backgroundColor: 'rgba(0, 0, 0, 0)' }}>
                             <div id="success"></div>
                             <form ref={form} onSubmit={sendEmail} name="sentMessage" id="contactForm" noValidate>
