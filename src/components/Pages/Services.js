@@ -55,10 +55,10 @@ function Services() {
                 </div>
                 <h4 className="text-secondary mb-3">Ocean Freight</h4>
                 <p className="text-primary-second">
-                  We carry your shipments from port to port, from door to door, and from door to port with standard or
-                  special equipments according to your needs. With our strong global network, we are able to provide services to almost
-                  every port of the world as well with extensive knowledge and experience in unique requirements and processes for hard
-                  to reach geographies of the world. We are distinguished with our competitive rates, quick feedbacks and clear information flow.
+                We carry your shipments from port to port, door to door and door to port with standard or special equipments according to your 
+                needs. With our strong global network, we are able to provide services to almost every port of the world as well with extensive 
+                knowledge and experience in unique requirements and processes for hard to reach geographies of the world. We are distinguished 
+                with our competitive rates, quick feedbacks and clear information flow.
                 </p>
                 <ul className="text-primary-second">
                   <li>FCL & LCL services</li>
