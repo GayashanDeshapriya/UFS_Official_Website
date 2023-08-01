@@ -35,9 +35,9 @@ function About() {
               <p className="text-primary-second mb-5">
                 Our industry forms the lifeline between the source and the consumer, the vital link: The Supply Chain.</p>
               <p className="text-primary-second mb-5">
-                UFS employees, each of whom is an expert in their own fields, manage to meet the needs of its customers and partners and keep customer satisfaction at the top with its knowledge and experience, its constant urge of learning and its ability to quickly adapting new trends. We ensure that the cargo will reach their destination in the safest and the most effective way.</p>
+              UFS employees, each of whom is an expert in their own fields, manage to meet the needs of our customers and partners and keep customer satisfaction at the top with their knowledge and experience, with a constant urge of learning and its ability to quickly adapting new trends. We ensure that the cargo will reach their destination in the safest and the most effective way.</p>
               <p className="text-primary-second mb-5">
-                UFS, by the virtue of being an independent company, is in contact with multiple agencies in every country. UFS chooses the optimal vehicle and agency or the representative, with regards to the volume, transportation preferences and the type of cargo, then delivers your cargo to the point of destination with optimum time at the best price.</p>
+              UFS, by the virtue of being an independent company, is in contact with multiple agencies in every country. We choose the optimal vehicle and agency or the representative, with regards to the volume, transportation preferences and the type of cargo, then delivers your cargo to the point of destination with optimum time at the best price.</p>
               <p className="text-primary-second mb-5">
                 UFS offers a wide range of logistics and freight forwarding services to meet all your shipping needs as One Stop Shop for Total Logistics Solutions.
               </p>
