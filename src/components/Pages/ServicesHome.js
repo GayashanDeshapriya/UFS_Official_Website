@@ -36,7 +36,7 @@ export default function ServicesHome() {
                             <i className="fa fa-2x fa-ship text-secondary pr-3"></i>
                             <h6 className="text-white font-weight-medium m-0">Ocean Freight</h6>
                         </div>
-                        <p className="text-primary-second">We carry your shipments from port to port, from door to door, and from door to port with standard or special equipments according to your needs.</p>
+                        <p className="text-primary-second">We carry your shipments from port to port, door to door and door to port with standard or special equipments according to your needs.</p>
 
                     </div>
                     <div className="col-lg-3 col-md-6 text-center mb-5">
