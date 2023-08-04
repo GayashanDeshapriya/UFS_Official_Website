@@ -33,8 +33,8 @@ const Footer = ({ onQuickLinkClick }) => {
         <div className="row g-5">
           <div className="col-lg-3 col-md-6">
             <h4 className="text-light mb-4">Address</h4>
-            <p className="mb-2"><i className="fa fa-map-marker-alt me-3"></i>
-              Office 203, Bushaqer Building, Block B
+            <p className="mb-2"><i className="fa fa-map-marker-alt me-4"></i>
+              Office 203, Bushaqer Building, Block B.
               PO Box 35277, Al Garhoud,
               Dubai, UAE.</p>
             <p className="mb-2"><i className="fa fa-phone-alt me-3"></i>00971-4-2507076</p>
