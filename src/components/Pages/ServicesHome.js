@@ -30,7 +30,7 @@ export default function ServicesHome() {
                         </div>
                         <p className="text-primary-second">UFS Air Freight provides a safe, efficient, and reliable means of air transportation for your time-sensitive and high-value cargo.</p>
                         <div className="text-center">
-                    <Link to="/service" className={`btn btn-light mt-5 py-1 px-3 ${location.pathname === '/service' ? 'active' : ''}`} onClick={scrollToTop}>
+                    <Link to="/service" className={`link link-secondary mt-5 py-1 px-3 ${location.pathname === '/service' ? 'active' : ''}`} onClick={scrollToTop}>
                         Read More
                     </Link>
 
@@ -44,7 +44,7 @@ export default function ServicesHome() {
                         </div>
                         <p className="text-primary-second">We carry your shipments from port to port, door to door and door to port with standard or special equipments according to your needs.</p>
                         <div className="text-center">
-                    <Link to="/service" className={`btn btn-light mt-4 py-1 px-3 ${location.pathname === '/service' ? 'active' : ''}`} onClick={scrollToTop}>
+                    <Link to="/service" className={`link link-secondary mt-4 py-1 px-3 ${location.pathname === '/service' ? 'active' : ''}`} onClick={scrollToTop}>
                         Read More
                     </Link>
 
@@ -58,7 +58,7 @@ export default function ServicesHome() {
                         </div>
                         <p className="text-primary-second">Non-truck own carrier operator with experience in GCC & ME market with reliable trucking partnership in running specific route within GCC and ME countries.</p>
                         <div className="text-center">
-                    <Link to="/service" className={`btn btn-light mt-2 py-1 px-3 ${location.pathname === '/service' ? 'active' : ''}`} onClick={scrollToTop}>
+                    <Link to="/service" className={`link link-secondary mt-2 py-1 px-3 ${location.pathname === '/service' ? 'active' : ''}`} onClick={scrollToTop}>
                         Read More
                     </Link>
 
@@ -72,7 +72,7 @@ export default function ServicesHome() {
                         </div>
                         <p className="text-primary-second">Apart from general goods, UFS provides unique and exclusive 3PL services for special products such as exercise goods, temp control cargo, food stuff, project cargo, etc.</p>
                         <div className="text-center">
-                    <Link to="/service" className={`btn btn-light mt-2 py-1 px-3 ${location.pathname === '/service' ? 'active' : ''}`} onClick={scrollToTop}>
+                    <Link to="/service" className={`link link-secondary mt-2 py-1 px-3 ${location.pathname === '/service' ? 'active' : ''}`} onClick={scrollToTop}>
                         Read More
                     </Link>
 
