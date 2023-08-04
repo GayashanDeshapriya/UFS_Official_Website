@@ -80,7 +80,7 @@ function Services() {
                   <img src={service7} className="img-fluid" alt="" />
                 </div>
                 <h4 className="text-secondary mb-3">Cross Border Logistics</h4>
-                <p className='text-primary-second'>Non-trucker own carrier operator with experience in GCC & ME market with reliable trucking partnership
+                <p className='text-primary-second'>Non-truck own carrier operator with experience in GCC & ME market with reliable trucking partnership
                   in running specific route within GCC and ME countries. It associates all sorts of service to meet with Shipper’s
                   schedule. Service integrated with Bond-trucking schedule, customs brokers and Cross-border trucker cross-docking
                   both Full Truckload (FTL) and Less Than Truckload (LTL). Specialized and Intermodal partners, which allows us

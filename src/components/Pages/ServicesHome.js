@@ -44,7 +44,7 @@ export default function ServicesHome() {
                             <i className="fa fa-2x fa-truck text-secondary pr-3" ></i>
                             <h6 className="text-white font-weight-medium m-0">Cross Border Logistics</h6>
                         </div>
-                        <p className="text-primary-second">Non-trucker own carrier operator with experience in GCC & ME market with reliable trucking partnership in running specific route within GCC and ME countries.</p>
+                        <p className="text-primary-second">Non-truck own carrier operator with experience in GCC & ME market with reliable trucking partnership in running specific route within GCC and ME countries.</p>
 
                     </div>
                     <div className="col-lg-3 col-md-6 text-center mb-5">
