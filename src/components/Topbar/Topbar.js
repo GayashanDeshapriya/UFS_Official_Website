@@ -9,7 +9,7 @@ function Topbar() {
                     <div class="d-inline-flex align-items-center text-white">
                         <small><i class="fa fa-phone-alt mr-2"></i>00971-4-2507076</small>
                         <small class="px-3">|</small>
-                        <small>Universal Freight Solution LLC</small>
+                        <small>Universal Freight Solutions LLC</small>
                         
                     </div>
                 </div>
