@@ -1,5 +1,8 @@
 import React from 'react';
-import img1 from '../../assets/home1.jpg';
+import img1 from '../../assets/home.jpg';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
+
 
 const Carousel = () => {
   const MaintextStyle = {
@@ -21,8 +24,13 @@ const Carousel = () => {
       <div className="owl-carousel header-carousel position-relative mb-5">
         <div className="owl-carousel-item position-relative">
           <div className='bg-image'>
+
+
             <div className='img-fluid '>
+
               <img className="img-fluid" src={img1} style={{ width: '100%', }} alt="" />
+
+
             </div>
 
 
