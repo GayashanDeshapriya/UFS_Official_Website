@@ -28,7 +28,9 @@ const Carousel = () => {
 
             <div className='img-fluid '>
 
-              <img className="img-fluid" src={img1} style={{ width: '100%', }} alt="" />
+              <LazyLoadImage className="img-fluid" 
+              effect="blur"
+              src={img1} style={{ width: '100%', }} alt="" />
 
 
             </div>
