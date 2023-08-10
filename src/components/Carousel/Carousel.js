@@ -1,6 +1,7 @@
 import React from 'react';
 import img1 from '../../assets/home.jpg';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css'; // Import the blur effect CSS
 
 
 
@@ -26,13 +27,14 @@ const Carousel = () => {
           <div className='bg-image'>
 
 
-            <div className='img-fluid '>
-
-              <LazyLoadImage className="img-fluid" 
-              effect="blur"
-              src={img1} style={{ width: '100%', }} alt="" />
-
-
+            <div className="img-container">
+              <LazyLoadImage
+                effect="blur"
+                src={img1}
+                alt=""
+                className="img-fluid"
+                style={{ width: '100%' }}
+              />
             </div>
 
 

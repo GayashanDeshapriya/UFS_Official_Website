@@ -3,6 +3,9 @@ import logo from '../../assets/ufs.png';
 import icon1 from '../../assets/phone-solid.svg';
 import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css'; // Import the blur effect CSS
+
 
 function Navbar() {
   const [fix, setFix] = useState(false);
@@ -34,7 +37,18 @@ function Navbar() {
   return (
     <nav className={`navbar navbar-expand-lg bg-white navbar-light shadow border-top border-5 border-primary ${fix ? 'fixed-top' : ''} p-0`}>
       <a href="/" className="navbar-brand d-flex align-items-center px-4 px-lg-5" onClick={scrollToTop}>
-        <img src={logo} alt="logo" width="150" height="auto" />
+        <div className="logo-and-image-container">
+          <div className="img-container">
+            <LazyLoadImage
+              effect="blur"
+              src={logo}
+              alt=""
+              className="img-fluid"
+              style={{ width: '150px', height: 'auto' }}
+
+            />
+          </div>
+        </div>
       </a>
       <button type="button" className="text-primary navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
         <span className="navbar-toggler-icon "></span>
