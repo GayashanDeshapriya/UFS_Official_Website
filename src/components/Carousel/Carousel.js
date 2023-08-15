@@ -34,12 +34,10 @@ const Carousel = () => {
                 style={{ width: '100%' }}
               />
             </div>
-            <div className="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style={{ background: 'rgba(25, 4, 20, .5)' }}>
+            <div className="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style={{ background: 'rgba(0, 0, 0, .3)' }}>
               <div className="container">
                 <div className='wow animate__animated animate__fadeInUp animate__delay-1s'>
-                  <div className="row justify-content-start">
-                    {/* Content Goes Here */}
-                  </div>
+                  
                 </div>
               </div>
             </div>
