@@ -1,8 +1,14 @@
 
 /* In your .css file or in a <style> tag in your component */
 .linear-gradient {
-    background: linear-gradient(to right, #d5ffa2, #eceeea); /* Adjust color1 and color2 */
-    /* Add other styles as needed */
+    background: linear-gradient(to right, #5c8728, #233463); /* Adjust color1 and color2 */
+    padding: 20px;
+    margin: 0;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border: 1px solid #f0f0f0; /* Add border */
   }
   
   .bounce-2 {
@@ -14,3 +20,9 @@
     50%  { transform: translateY(-100px); }
     100% { transform: translateY(0); }
 }
+
+.text-outline {
+    -webkit-text-stroke: 0.4px #ffffff; /* Adjust the width (2px) and color (#000) as needed */
+    color: transparent; /* Makes the original text transparent */
+  }
+  
