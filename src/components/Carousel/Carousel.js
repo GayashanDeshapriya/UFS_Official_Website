@@ -27,7 +27,7 @@ const Carousel = () => {
   return (
     <div className="container-fluid position-relative p-0">
       <div
-        className="container-fluid py-1 mb-3 hero-header"
+        className="container-fluid py-1 mb-3 hero-header loading='lazy'"
         style={{
           backgroundImage: `url(${img3})`,
           backgroundSize: 'cover',
