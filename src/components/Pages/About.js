@@ -30,7 +30,8 @@ function About() {
               data-wow-delay="0.3s"
             >
               <h5 className="text-secondary text-uppercase mb-3">About Us</h5>
-              <h2 className="mb-5 text-primary font-weight-bold" style={{ fontWeight: 'bold' }}>UNIVERSAL <span className="text-secondary" >FREIGHT SOLUTIONS LLC</span></h2>
+              <h2 className="mb-5 text-primary font-weight-bold" 
+              >UNIVERSAL <span className="text-secondary" >FREIGHT SOLUTIONS LLC</span></h2>
               <h6 className="font-weight-bold text-secondary text-uppercase mb-3">Who We are</h6>
               <p className="text-primary-second mb-5">
                 Our industry forms the lifeline between the source and the consumer, the vital link: The Supply Chain.</p>

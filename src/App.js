@@ -8,10 +8,10 @@ import Footer from './components/Footer/Footer';
 //import Contact from './components/Pages/Contact';
 import React, { lazy, Suspense } from 'react';
 
-const Home = lazy(() => wait(500).then(()=> import("./components/Pages/Home")))
-const About = lazy(() => wait(500).then(()=> import("./components/Pages/About")))
-const Services = lazy(() => wait(500).then(()=> import("./components/Pages/Services")))
-const Contact = lazy(() => wait(500).then(()=> import("./components/Pages/Contact")))
+const Home = lazy(()=> import("./components/Pages/Home"))
+const About = lazy(()=> import("./components/Pages/About"))
+const Services = lazy(()=> import("./components/Pages/Services"))
+const Contact = lazy(()=> import("./components/Pages/Contact"))
 
 
 
@@ -22,7 +22,7 @@ function App() {
       <Topbar />
       <Navbar />
 
-      <Suspense fallback={<h1 className="mb-5 text-primary font-weight-bold" align="center" style={{ fontWeight: 'bold' }}>Loading....</h1>}>
+      <Suspense >
         <Routes>
 
           <Route path="/" element={<Home />} />
