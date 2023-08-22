@@ -1,6 +1,6 @@
 import React from 'react';
 import img1 from '../../assets/Picture1.jpg';
-import img2 from '../../assets/home.svg';
+import img2 from '../../assets/home3.svg';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import './Carousel.css';
