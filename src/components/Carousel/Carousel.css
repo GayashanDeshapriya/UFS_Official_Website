@@ -1,0 +1,16 @@
+
+/* In your .css file or in a <style> tag in your component */
+.linear-gradient {
+    background: linear-gradient(to right, #d5ffa2, #eceeea); /* Adjust color1 and color2 */
+    /* Add other styles as needed */
+  }
+  
+  .bounce-2 {
+    animation-name: bounce-2;
+    animation-timing-function: ease;
+}
+@keyframes bounce-2 {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-100px); }
+    100% { transform: translateY(0); }
+}
