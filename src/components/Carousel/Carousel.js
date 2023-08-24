@@ -53,13 +53,13 @@ const Carousel = () => {
               <div class="profile bg-gradient-primary-to-secondary">
 
                 <div className='bg-image'>
-                  <div className="img-container col-13  mb-1">
+                  <div className="img-container col-16  mb-1">
                     <LazyLoadImage
                       effect="blur"
                       src={img2}
                       alt=""
                       className="img-fluid"
-                      style={{ width: '800px', float: 'right' }}
+                      style={{ width: '900px', float: 'right' }}
                     />
 
                   </div>

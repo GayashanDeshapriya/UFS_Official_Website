@@ -2,6 +2,10 @@ import React, { useState, useEffect } from 'react';
 import Carousel from '../Carousel/Carousel';
 import ServicesHome from './ServicesHome';
 import Chooseus from '../whyChooseUs';
+import Navbar from '../Navbar/Navbar';
+import Footer from '../Footer/Footer';
+
+
 
 function Home() {
   const [carouselLoaded, setCarouselLoaded] = useState(false);
@@ -31,9 +35,13 @@ function Home() {
 
   return (
     <div>
+      <Navbar />
+      
       {carouselLoaded ? <Carousel /> : <p></p>}
       {servicesLoaded ? <ServicesHome /> : <p></p>}
       {servicesLoaded ? <Chooseus /> : null}
+
+      <Footer />
     </div>
   );
 }

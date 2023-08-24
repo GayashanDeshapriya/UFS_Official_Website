@@ -20,7 +20,7 @@ function App() {
   return (
     <>
       <Topbar />
-      <Navbar />
+      
 
       <Suspense >
         <Routes>
@@ -34,7 +34,7 @@ function App() {
       </Suspense>
 
 
-      <Footer />
+      
 
 
 
