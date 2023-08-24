@@ -2,10 +2,13 @@ import React from 'react';
 import 'animate.css';
 import img1 from '../../assets/about.jpg';
 import './pages.css';
+import Navbar from '../Navbar/Navbar';
+import Footer from '../Footer/Footer';
 
 function About() {
   return (
     <div>
+      <Navbar />
 
 
       <div className="container-fluid overflow-hidden py-5 px-lg-0">
@@ -48,7 +51,7 @@ function About() {
         </div>
       </div>
 
-
+      <Footer />
     </div>
   );
 }

@@ -2,6 +2,8 @@ import React from 'react';
 import emailjs from '@emailjs/browser';
 import { useRef, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
+import Navbar from '../Navbar/Navbar';
+import Footer from '../Footer/Footer';
 
 
 
@@ -41,6 +43,9 @@ const Contact = () => {
     });
 
     return (
+        <div>
+            <Navbar />
+        
         <div className="container-fluid py-5" >
             <div className="container">
 
@@ -146,7 +151,10 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
+            </div>
+            <Footer />
         </div>
+        
     );
 };
 
