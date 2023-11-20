@@ -1,6 +1,7 @@
 import React from 'react';
 import img1 from '../../assets/Picture1.jpg';
-import img2 from '../../assets/home3.svg';
+import img3 from '../../assets/home3.svg';
+import img2 from '../../assets/home10.png';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import './Carousel.css';
@@ -27,7 +28,7 @@ const Carousel = () => {
   const opacity = 0;
 
   const headerStyle = {
-    backgroundImage: `url(${img1})`, // Set the image as background
+    backgroundImage: `url(${img3})`, // Set the image as background
     backgroundSize: 'cover', // Adjust background size to cover the header
     backgroundPosition: 'center', // Center the background image
   };
@@ -65,7 +66,7 @@ const Carousel = () => {
                     transition={{ duration: 1.6, ease: "easeInOut" }}>
                     <LazyLoadImage
                       effect="blur"
-                      src={img2}
+                      src={img3}
                       alt=""
                       className="img-fluid"
                       style={{ width: '1050px', height: '460px', float: 'right' }}
