@@ -19,9 +19,14 @@ function Services() {
     const link = document.createElement("a");
     link.href = Charges;
     link.download = "Sea Container Charges.xlsx";
+
+    // Set up an event listener for the download completion
     link.onload = () => {
       link.remove();
       setDownloading(false);
+
+    // Display a popup message after successful download
+      window.alert("Download completed!");
     };
     document.body.appendChild(link);
     link.click();
@@ -90,8 +95,8 @@ function Services() {
                   <li>Special Projects & Vessel Chartering </li>
                   <li>NVOCC services</li>
                 </ul>
-                <button type="button" className="btn btn-primary "onClick={handleDownload} disabled={downloading}>Sea Container Charges</button>
-                
+                <button type="button" className="btn btn-primary " onClick={handleDownload} enabled={downloading}>Sea Container Charges</button>
+
               </div>
             </div>
             <div
