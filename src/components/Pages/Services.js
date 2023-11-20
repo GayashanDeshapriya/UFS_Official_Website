@@ -7,23 +7,27 @@ import service7 from '../../assets/service-7.jpg';
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
 import { useState, useEffect } from "react";
-import pdf from "../Pages/Sea Container Charges_files/tabstrip.htm"
+import Charges from "../Pages/Sea Container Charges.xlsx"
 
 
-class Services extends React.Component {
+function Services() {
 
-  openNewTab = () => {
-    const newTab = window.open("https://www.google.com",'_blank');
-    if (newTab) {
-      newTab.focus();
-    } else {
-      // Handle popup blocker, if necessary
-      console.error('Unable to open new tab. Please check your popup blocker settings.');
-    }
+  const [downloading, setDownloading] = useState(false);
+
+  const handleDownload = () => {
+    setDownloading(true);
+    const link = document.createElement("a");
+    link.href = Charges;
+    link.download = "Sea Container Charges.xlsx";
+    link.onload = () => {
+      link.remove();
+      setDownloading(false);
+    };
+    document.body.appendChild(link);
+    link.click();
   };
 
 
-render(){
   return (
     <div>
       <Navbar />
@@ -86,7 +90,7 @@ render(){
                   <li>Special Projects & Vessel Chartering </li>
                   <li>NVOCC services</li>
                 </ul>
-                <button type="button" className="btn btn-primary "onClick={this.openNewTab}>Sea Container Charges</button>
+                <button type="button" className="btn btn-primary "onClick={handleDownload} disabled={downloading}>Sea Container Charges</button>
                 
               </div>
             </div>
@@ -172,7 +176,6 @@ render(){
       <Footer />
     </div>
   );
-}
 }
 
 export default Services;
