@@ -25,7 +25,7 @@ function Services() {
       link.remove();
       setDownloading(false);
 
-    // Display a popup message after successful download
+      // Display a popup message after successful download
       window.alert("Download completed!");
     };
     document.body.appendChild(link);
@@ -68,14 +68,7 @@ function Services() {
 
               </div>
             </div>
-            <div
-              className="col-md-6 col-lg-4 wow animate__animated animate__fadeInUp"
-              data-wow-delay="0.5s"
-
-
-
-
-            >
+            <div className="col-md-6 col-lg-4 wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
               <div className="service-item p-4">
                 <div className="overflow-hidden mb-4">
                   <img src={service2} className="img-fluid" alt="" />
@@ -96,7 +89,6 @@ function Services() {
                   <li>NVOCC services</li>
                 </ul>
                 <button type="button" className="btn btn-primary " onClick={handleDownload} enabled={downloading}>Sea Container Charges</button>
-
               </div>
             </div>
             <div
@@ -117,9 +109,7 @@ function Services() {
                   <li>Full Truckload (FTL)</li>
                   <li>Less Than Truckload (LTL)</li>
                   <li>Special equipment and project cargo transportation </li>
-
                 </ul>
-
               </div>
             </div>
             <div
@@ -140,7 +130,6 @@ function Services() {
                   <li>Storage facility for Temp control and non-Temp control cargo</li>
                   <li>3PL and other value-added service</li>
                 </ul>
-
               </div>
             </div>
             <div
@@ -169,11 +158,7 @@ function Services() {
 
               </div>
             </div>
-            <div
-              className="col-md-6 col-lg-4 wow animate__animated animate__fadeInUp"
-              data-wow-delay="0.7s"
-            >
-
+            <div className="col-md-6 col-lg-4 wow animate__animated animate__fadeInUp" data-wow-delay="0.7s">
             </div>
           </div>
         </div>
