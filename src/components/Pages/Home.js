@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Carousel from '../Carousel/Carousel';
+import Carousel1 from '../Carousel/Carousel1';
 import ServicesHome from './ServicesHome';
 import Chooseus from '../whyChooseUs';
 import Navbar from '../Navbar/Navbar';

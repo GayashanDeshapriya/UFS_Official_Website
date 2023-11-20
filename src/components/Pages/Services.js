@@ -6,9 +6,24 @@ import service4 from '../../assets/service-4.jpg';
 import service7 from '../../assets/service-7.jpg';
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
+import { useState, useEffect } from "react";
+import pdf from "../Pages/Sea Container Charges_files/tabstrip.htm"
 
 
-function Services() {
+class Services extends React.Component {
+
+  openNewTab = () => {
+    const newTab = window.open("https://www.google.com",'_blank');
+    if (newTab) {
+      newTab.focus();
+    } else {
+      // Handle popup blocker, if necessary
+      console.error('Unable to open new tab. Please check your popup blocker settings.');
+    }
+  };
+
+
+render(){
   return (
     <div>
       <Navbar />
@@ -71,7 +86,8 @@ function Services() {
                   <li>Special Projects & Vessel Chartering </li>
                   <li>NVOCC services</li>
                 </ul>
-
+                <button type="button" className="btn btn-primary "onClick={this.openNewTab}>Sea Container Charges</button>
+                
               </div>
             </div>
             <div
@@ -156,6 +172,7 @@ function Services() {
       <Footer />
     </div>
   );
+}
 }
 
 export default Services;

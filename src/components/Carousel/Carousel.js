@@ -9,9 +9,6 @@ import { inView } from "framer-motion"
 import { useInView } from "react-intersection-observer";
 
 
-
-
-
 const Carousel = () => {
   const maintextStyle = {
     fontWeight: 'bold',
@@ -45,8 +42,8 @@ const Carousel = () => {
 
     <header class="py-5 mb-5  linear-gradient" >
 
-      <div class="container px-5 pb-5">
-        <div class="row gx-5 align-items-center">
+      <div class="container px-3 pb-1">
+        <div class="row gx-2 align-items-center">
           <div class="col-xxl-5">
 
             <div class="text-center text-xxl-start">
@@ -65,7 +62,7 @@ const Carousel = () => {
                     ref={ref}
                     initial={{ y: "15vw", opacity: 0 }}
                     animate={inView ? { y: 0, opacity: 1 } : { y: "17vw", opacity: 0 }}
-                    transition={{ duration: 1.2, ease: "easeInOut" }}>
+                    transition={{ duration: 1.6, ease: "easeInOut" }}>
                     <LazyLoadImage
                       effect="blur"
                       src={img2}
