@@ -12,7 +12,14 @@ UNIVERSAL FREIGHT SOLUTIONS LLC website built in React
 * React
 
 ## Homepage visuals
-![Imgur](https://github.com/GayashanDeshapriya/my_portfolio/blob/master/src/images/Project%20images/full-stack.jpg)
+![Imgur](https://github.com/GayashanDeshapriya/UFS_Official_Website/blob/master/src/assets/HOME.png)
 
 ## About page visuals
-![Imgur](https://github.com/GayashanDeshapriya/my_portfolio/blob/master/src/images/Project%20images/About.jpg)
+![Imgur](https://github.com/GayashanDeshapriya/UFS_Official_Website/blob/master/src/assets/ABOUT.png)
+
+## Services page visuals
+![Imgur](https://github.com/GayashanDeshapriya/UFS_Official_Website/blob/master/src/assets/SERVISE.png)
+
+## Contact Us page visuals
+![Imgur](https://github.com/GayashanDeshapriya/UFS_Official_Website/blob/master/src/assets/CONTACT.png)
+
