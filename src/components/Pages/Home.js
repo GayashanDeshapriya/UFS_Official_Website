@@ -38,7 +38,7 @@ function Home() {
     <div>
       <Navbar />
       
-      {carouselLoaded ? <Carousel /> : <p></p>}
+      {carouselLoaded ? <Carousel1 /> : <p></p>}
       {servicesLoaded ? <ServicesHome /> : <p></p>}
       {servicesLoaded ? <Chooseus /> : null}
 
