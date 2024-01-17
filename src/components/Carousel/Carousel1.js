@@ -1,5 +1,5 @@
 import React from 'react';
-import img1 from '../../assets/home1.jpg';
+import img1 from '../../assets/home2.jpg';
 
 const Carousel1 = () => {
     const MaintextStyle = {
@@ -9,20 +9,17 @@ const Carousel1 = () => {
         WebkitTextStrokeColor: 'white',
         fontSize: '6vw',
     };
-
     const textStyle = {
         fontWeight: 'bold',
         fontSize: '3vw',
-
     };
-
     return (
         <div className="container-fluid p-0 pb-0">
             <div className="owl-carousel header-carousel position-relative mb-5">
                 <div className="owl-carousel-item position-relative">
                     <div className='bg-image'>
                         <div className='img-fluid '>
-                            <img className="img-fluid" src={img1} style={{ width: '100%', height:'50%' }} alt="" />
+                            <img className="img-fluid" src={img1} style={{ width: '100%', height: '50%' }} alt="" />
                         </div>
                         <div className="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style={{ background: 'rgba(1, 5, 20, .6)' }}>
                             <div className="container">

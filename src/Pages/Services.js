@@ -6,42 +6,16 @@ import service4 from '../assets/service-4.jpg';
 import service7 from '../assets/service-7.jpg';
 import Navbar from '../components/Navbar/Navbar';
 import Footer from '../components/Footer/Footer';
-// import { useState, useEffect } from "react";
-// import Charges from "../Pages/Sea Container Charges.xlsx"
 import { Link } from 'react-router-dom';
 
 
 function Services() {
-
-  // const [downloading, setDownloading] = useState(false);
-
-  // const handleDownload = () => {
-  //   setDownloading(true);
-  //   const link = document.createElement("a");
-  //   link.href = Charges;
-  //   link.download = "Sea Container Charges.xlsx";
-
-  //   // Set up an event listener for the download completion
-  //   link.onload = () => {
-  //     link.remove();
-  //     setDownloading(false);
-
-  //     // Display a popup message after successful download
-  //     window.alert("Download completed!");
-  //   };
-  //   document.body.appendChild(link);
-  //   link.click();
-  // };
-
-
   return (
     <div>
       <Navbar />
-
       <div className="container-xxl py-5">
         <div className="container py-5">
           <div className="text-center wow fadeInUp" data-wow-delay="0.10s">
-
             <h5 className="text-primary text-uppercase mb-2">Explore Our Services</h5>
             <h2 className="mb-5 text-primary font-weight-bold" style={{ fontWeight: 'bold' }}>UNIVERSAL <span className="text-secondary" >FREIGHT SOLUTIONS LLC</span></h2>
           </div>
@@ -66,7 +40,6 @@ function Services() {
                   <li>	Extensive network of hubs</li>
                   <li>	Air Charter services</li>
                 </ul>
-
               </div>
             </div>
             <div className="col-md-6 col-lg-4 wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
@@ -90,7 +63,6 @@ function Services() {
                   <li>NVOCC services</li>
                 </ul>
                 <Link to="/Services/Sea-Container-Charges"><button type="button" className="btn btn-primary ">Sea Container Charges</button></Link>
-                {/* <button type="button" className="btn btn-primary " onClick={handleDownload} enabled={downloading}>Sea Container Charges</button> */}
               </div>
             </div>
             <div
@@ -157,7 +129,6 @@ function Services() {
                   <li>Standardized Operation process</li>
                   <li>DAP/DDP services globally</li>
                 </ul>
-
               </div>
             </div>
             <div className="col-md-6 col-lg-4 wow animate__animated animate__fadeInUp" data-wow-delay="0.7s">

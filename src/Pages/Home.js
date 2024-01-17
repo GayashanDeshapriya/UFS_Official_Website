@@ -1,46 +1,15 @@
-import React, { useState, useEffect } from 'react';
 import Carousel1 from '../components/Carousel/Carousel1';
 import ServicesHome from './ServicesHome';
 import Navbar from '../components/Navbar/Navbar'
 import Footer from '../components/Footer/Footer'
 import img3 from '../assets/Picture1.jpg'
 
-
-
 function Home() {
-  const [carouselLoaded, setCarouselLoaded] = useState(false);
-  const [servicesLoaded, setServicesLoaded] = useState(false);
-
-
-  useEffect(() => {
-    // Simulate the loading process (you can replace setTimeout with actual data loading)
-    const carouselLoadTimeout = setTimeout(() => {
-      setCarouselLoaded(true);
-    }, 0); // Adjust the time as needed
-
-    return () => clearTimeout(carouselLoadTimeout);
-  }, []);
-
-  useEffect(() => {
-    if (carouselLoaded) {
-      // Simulate the loading process (you can replace setTimeout with actual data loading)
-      const servicesLoadTimeout = setTimeout(() => {
-        setServicesLoaded(true);
-      }, 500); // Adjust the time as needed
-
-      return () => clearTimeout(servicesLoadTimeout);
-    }
-  }, [carouselLoaded]);
-
-
   return (
-    <div>
+    <div className='container-xs '>
       <Navbar />
-
-      {carouselLoaded ? <Carousel1 /> : <p></p>}
-      {servicesLoaded ? <ServicesHome /> : <p></p>}
-
-
+      <Carousel1 />
+      <ServicesHome />
       <div className="container-fluid bg-light my-5 wow animate__animated animate__fadeInUp" data-wow-offset="250">
         <div className="container">
           <div className="row align-items-center">
@@ -60,11 +29,9 @@ function Home() {
           </div>
         </div>
       </div>
-
       <Footer />
     </div>
   );
 }
-
 export default Home;
 

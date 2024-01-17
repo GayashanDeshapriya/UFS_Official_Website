@@ -53,7 +53,7 @@ const Footer = ({ onQuickLinkClick }) => {
             <h4 className="text-light  mb-4">Quick Links</h4>
             <Link to="/about" className="btn btn-link quick-link" >About Us</Link>
             <Link to="/contact" className="btn btn-link quick-link">Contact Us</Link>
-            <Link to="/service" className="btn btn-link quick-link">Our Services</Link>
+            <Link to="/services" className="btn btn-link quick-link">Our Services</Link>
           </div>
           <div className="col-lg-5 col-md-6">
             <LazyLoadImage
@@ -63,7 +63,7 @@ const Footer = ({ onQuickLinkClick }) => {
               className="img-fluid"
               style={{ width: '350px', height: 'auto' }}
             />
-           
+
           </div>
           {/* <div className="col-lg-3 col-md-6">
             <h4 className="text-light mb-4">Newsletter</h4>
