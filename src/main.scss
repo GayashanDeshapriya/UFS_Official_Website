@@ -8,9 +8,6 @@ $custom-colors:(
     "primary-second":#595959
 );
 
-
-
 // Merge the maps
 $theme-colors: map-merge($theme-colors, $custom-colors);
-
 @import "../node_modules/bootstrap/scss/bootstrap";

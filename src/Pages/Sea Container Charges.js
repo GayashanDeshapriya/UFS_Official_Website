@@ -41,8 +41,7 @@ const SeaContainer = () => {
               <button type="button" className="btn btn-primary align-left" onClick={handleDownload} enabled={downloading}>Download</button>
             </div>
           </div>
-        </div>
-      
+        </div>      
       <Footer />
     </div>
   )

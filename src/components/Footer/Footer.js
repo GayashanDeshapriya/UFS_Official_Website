@@ -4,8 +4,6 @@ import logo from '../../assets/ufs.png';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Footer = ({ onQuickLinkClick }) => {
-
-
   useEffect(() => {
     const handleLinkClick = () => {
       // Scroll to the top of the page
@@ -84,7 +82,6 @@ const Footer = ({ onQuickLinkClick }) => {
               &copy; <Link className="border-bottom" to="#">UFS 2023</Link>, All Right Reserved...<br />
               Designed & Developed by <Link className="border-bottom" to="#">nexlab360</Link>
             </div>
-
           </div>
         </div>
       </div>
