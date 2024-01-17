@@ -1,18 +1,31 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 
+function DisplayTable() {
+    const [data, setData] = useState([]);
 
-function table({ TradeType, TariffCategory, TariffDesStandard, TariffDesNonStandard, TariffCode, UOM, ContrSize, CargoType, Slabs, Currency, Rate, VAT_applicable, VAT_prcentang, ValidForm, Remarks }) {
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch('/SeaContainerData.json');
+                const jsonData = await response.json();
+                setData(jsonData);
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        };
+
+        fetchData();
+    }, []);
 
     return (
-
-        <div class="table-responsive">
-            <table class="table table-bordered table-striped">
+        <div className="table-responsive">
+            <table className="table table-bordered table-striped">
                 <thead>
                     <tr>
                         <th>Trade Type</th>
                         <th>Tariff Category</th>
                         <th>Tariff Description (Standardized)</th>
-                        <th>Tariff Description (Non-standarized/Misc)</th>
+                        <th>Tariff Description (Non-standardized/Misc)</th>
                         <th>Tariff Code</th>
                         <th>UOM</th>
                         <th>Contr Size</th>
@@ -28,47 +41,30 @@ function table({ TradeType, TariffCategory, TariffDesStandard, TariffDesNonStand
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>Export</td>
-                        <td>BOL - B/L amendment fee</td>
-                        <td>Bill of Lading amendment charge</td>
-                        <td>actual as per shipping line</td>
-                        <td>E2</td>
-                        <td>Per Document</td>
-                        <td>20 & 40</td>
-                        <td>Dry - General/FAK</td>
-                        <td>SINGLE</td>
-                        <td>USD</td>
-                        <td>140</td>
-                        <td>Exempted</td>
-                        <td>0%</td>
-                        <td>1-Jun-23</td>
-                        <td></td>
-                        <td>At actuals from shipping line, minimum USD 140</td>
-                    </tr>
-
-                    <tr>
-                        <td>Export</td>
-                        <td>BOL - B/L fee</td>
-                        <td>Bill of Lading issuance charge</td>
-                        <td>Export BL fee</td>
-                        <td>E3</td>
-                        <td>Per Document</td>
-                        <td>20 & 40</td>
-                        <td>Dry - General/FAK</td>
-                        <td>SINGLE</td>
-                        <td>AED</td>
-                        <td>575.00</td>
-                        <td>Exempted</td>
-                        <td>0%</td>
-                        <td>1-Jun-23</td>
-                        <td></td>
-                        <td>At actuals from shipping line</td>
-                    </tr>
-
+                    {data.map((item) => (
+                        <tr key={item.id}>
+                            <td>{item.TradeType}</td>
+                            <td>{item.TariffCategory}</td>
+                            <td>{item.TariffDesStandard}</td>
+                            <td>{item.TariffDesNonStandard}</td>
+                            <td>{item.TariffCode}</td>
+                            <td>{item.UOM}</td>
+                            <td>{item.ContrSize}</td>
+                            <td>{item.CargoType}</td>
+                            <td>{item.Slabs}</td>
+                            <td>{item.Currency}</td>
+                            <td>{item.Rate}</td>
+                            <td>{item.VAT_applicable}</td>
+                            <td>{item.VAT_percent}</td>
+                            <td>{item.ValidForm}</td>
+                            <td>{item.ValidTo}</td>
+                            <td>{item.Remarks}</td>
+                        </tr>
+                    ))}
                 </tbody>
             </table>
         </div>
-    )
+    );
 }
-export default table
+
+export default DisplayTable;

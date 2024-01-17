@@ -1,6 +1,6 @@
 [
   {
-    "id":"1",
+    "id":1,
     "TradeType": "Export",
     "TariffCategory": "BOL - B/L amendment fee",
     "TariffDesStandard": "Bill of Lading amendment charge",
@@ -18,6 +18,7 @@
     "Remarks": "At actuals from shipping line, minimum USD 140"
   },
   {
+    "id":2,
     "TradeType": "Export",
     "TariffCategory": "BOL - B/L fee",
     "TariffDesStandard": "Bill of Lading issuance charge",
@@ -35,6 +36,7 @@
     "Remarks": "At actuals from shipping line"
   },
   {
+    "id":3,
     "TradeType": "Export",
     "TariffCategory": "BOL - Switch B/L fee",
     "TariffDesStandard": "Switch Bill of Lading charge",
@@ -52,6 +54,7 @@
     "Remarks": "At actuals from shipping line"
   },
   {
+    "id":"4",
     "TradeType": "Export",
     "TariffCategory": "CUSTOMS - Customs clearance/ brokerage fees",
     "TariffDesStandard": "Customs clearance/ brokerage fees",
@@ -69,6 +72,7 @@
     "Remarks": "up to 5 cntrs"
   },
   {
+    "id":"5",
     "TradeType": "Export",
     "TariffCategory": "CUSTOMS - Customs inspection fees",
     "TariffDesStandard": "Customs inspection fees (Import & Export)",
@@ -86,6 +90,7 @@
     "Remarks": ""
   },
   {
+    "id":"6",
     "TradeType": "Import",
     "TariffCategory": "BOL - B/L amendment fee",
     "TariffDesStandard": "Bill of Lading amendment charge",
@@ -103,6 +108,7 @@
     "Remarks": "At actuals from shipping line, minimum USD 140"
   },
   {
+    "id":"7",
     "TradeType": "Import",
     "TariffCategory": "BOL - B/L fee",
     "TariffDesStandard": "Bill of Lading issuance charge",
@@ -120,6 +126,7 @@
     "Remarks": "At actuals from shipping line"
   },
   {
+    "id":"8",
     "TradeType": "Import",
     "TariffCategory": "CUSTOMS - Customs clearance/ brokerage fees",
     "TariffDesStandard": "Customs clearance/ brokerage fees",
@@ -137,6 +144,7 @@
     "Remarks": "up to 5 cntrs"
   },
   {
+    "id":"9",
     "TradeType": "Import",
     "TariffCategory": "CUSTOMS - Customs inspection fees",
     "TariffDesStandard": "Customs inspection fees (Import & Export)",
