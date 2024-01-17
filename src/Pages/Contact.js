@@ -2,8 +2,8 @@ import React from 'react';
 import emailjs from '@emailjs/browser';
 import { useRef, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
-import Navbar from '../Navbar/Navbar';
-import Footer from '../Footer/Footer';
+import Navbar from '../components/Navbar/Navbar'
+import Footer from '../components/Footer/Footer'
 
 
 

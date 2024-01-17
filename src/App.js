@@ -7,43 +7,26 @@ import Topbar from './components/Topbar/Topbar';
 //import Contact from './components/Pages/Contact';
 import React, { lazy, Suspense } from 'react';
 
-const Home = lazy(()=> import("./components/Pages/Home"))
-const About = lazy(()=> import("./components/Pages/About"))
-const Services = lazy(()=> import("./components/Pages/Services"))
-const Contact = lazy(()=> import("./components/Pages/Contact"))
-
-
+const Home = lazy(() => import("./Pages/Home"))
+const About = lazy(() => import("./Pages/About"))
+const Services = lazy(() => import("./Pages/Services"))
+const Contact = lazy(() => import("./Pages/Contact"))
+const SeaContainer = lazy(() => import("./Pages/Sea Container Charges"))
 
 function App() {
-
   return (
     <>
       <Topbar />
-      
-
       <Suspense >
         <Routes>
-
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/service" element={<Services />} />
+          <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
-
+          <Route path="/Services/Sea-Container-Charges" element={<SeaContainer />} />
         </Routes>
       </Suspense>
-
-
-      
-
-
-
-
     </>
   );
-
 }
-function wait(time){
-  return new Promise(resolve => setTimeout(resolve, time))
-}
-
 export default App;

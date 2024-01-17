@@ -1,9 +1,9 @@
 import React from 'react';
 import 'animate.css';
-import img1 from '../../assets/about.jpg';
+import img1 from '../assets/about.jpg';
 import './pages.css';
-import Navbar from '../Navbar/Navbar';
-import Footer from '../Footer/Footer';
+import Navbar from '../components/Navbar/Navbar'
+import Footer from '../components/Footer/Footer'
 
 function About() {
   return (

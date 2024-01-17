@@ -1,36 +1,37 @@
 import React from 'react';
-import service1 from '../../assets/service-1.jpg';
-import service2 from '../../assets/service-2.jpg';
-import service3 from '../../assets/service-3.jpg';
-import service4 from '../../assets/service-4.jpg';
-import service7 from '../../assets/service-7.jpg';
-import Navbar from '../Navbar/Navbar';
-import Footer from '../Footer/Footer';
-import { useState, useEffect } from "react";
-import Charges from "../Pages/Sea Container Charges.xlsx"
+import service1 from '../assets/service-1.jpg';
+import service2 from '../assets/service-2.jpg';
+import service3 from '../assets/service-3.jpg';
+import service4 from '../assets/service-4.jpg';
+import service7 from '../assets/service-7.jpg';
+import Navbar from '../components/Navbar/Navbar';
+import Footer from '../components/Footer/Footer';
+// import { useState, useEffect } from "react";
+// import Charges from "../Pages/Sea Container Charges.xlsx"
+import { Link } from 'react-router-dom';
 
 
 function Services() {
 
-  const [downloading, setDownloading] = useState(false);
+  // const [downloading, setDownloading] = useState(false);
 
-  const handleDownload = () => {
-    setDownloading(true);
-    const link = document.createElement("a");
-    link.href = Charges;
-    link.download = "Sea Container Charges.xlsx";
+  // const handleDownload = () => {
+  //   setDownloading(true);
+  //   const link = document.createElement("a");
+  //   link.href = Charges;
+  //   link.download = "Sea Container Charges.xlsx";
 
-    // Set up an event listener for the download completion
-    link.onload = () => {
-      link.remove();
-      setDownloading(false);
+  //   // Set up an event listener for the download completion
+  //   link.onload = () => {
+  //     link.remove();
+  //     setDownloading(false);
 
-      // Display a popup message after successful download
-      window.alert("Download completed!");
-    };
-    document.body.appendChild(link);
-    link.click();
-  };
+  //     // Display a popup message after successful download
+  //     window.alert("Download completed!");
+  //   };
+  //   document.body.appendChild(link);
+  //   link.click();
+  // };
 
 
   return (
@@ -88,7 +89,8 @@ function Services() {
                   <li>Special Projects & Vessel Chartering </li>
                   <li>NVOCC services</li>
                 </ul>
-                <button type="button" className="btn btn-primary " onClick={handleDownload} enabled={downloading}>Sea Container Charges</button>
+                <Link to="/Services/Sea-Container-Charges"><button type="button" className="btn btn-primary ">Sea Container Charges</button></Link>
+                {/* <button type="button" className="btn btn-primary " onClick={handleDownload} enabled={downloading}>Sea Container Charges</button> */}
               </div>
             </div>
             <div

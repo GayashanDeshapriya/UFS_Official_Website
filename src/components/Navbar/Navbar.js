@@ -55,13 +55,13 @@ function Navbar() {
       </button>
       <div className="collapse navbar-collapse" id="navbarCollapse">
         <div className="navbar-nav ms-auto p-4 p-lg-0">
-          <Link to="/" className={`nav-item nav-link ${location.pathname === '/' ? 'active' : ''}`} onClick={scrollToTop}>
+          <Link to="/" className={`nav-item nav-link ${location.pathname === '/home' ? 'active' : ''}`} onClick={scrollToTop}>
             Home
           </Link>
           <Link to="/about" className={`nav-item nav-link ${location.pathname === '/about' ? 'active' : ''}`} onClick={scrollToTop}>
             About
           </Link>
-          <Link to="/service" className={`nav-item nav-link ${location.pathname === '/service' ? 'active' : ''}`} onClick={scrollToTop}>
+          <Link to="/services" className={`nav-item nav-link ${location.pathname === '/service' ? 'active' : ''}`} onClick={scrollToTop}>
             Services
           </Link>
           <Link to="/contact" className={`nav-item nav-link ${location.pathname === '/contact' ? 'active' : ''}`} onClick={scrollToTop}>
