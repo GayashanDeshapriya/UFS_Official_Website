@@ -1,0 +1,11 @@
+.table-bordered{
+    border: 2px solid #5c8728;
+}
+.table-bordered thead td, .table-bordered thead th{
+    border-bottom-width: 2px;
+    height: 100px;
+}
+.table-bordered td, .table-bordered th{
+    border: 1px solid #5c8728;
+    height: 1%;
+}

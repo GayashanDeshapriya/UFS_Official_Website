@@ -33,6 +33,14 @@ function Services() {
   //   link.click();
   // };
 
+  // Scroll to the top of the page
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
 
   return (
     <div>
@@ -89,7 +97,7 @@ function Services() {
                   <li>Special Projects & Vessel Chartering </li>
                   <li>NVOCC services</li>
                 </ul>
-                <Link to="/Services/Sea-Container-Charges"><button type="button" className="btn btn-primary ">Sea Container Charges</button></Link>
+                <Link to="/Services/Sea-Container-Charges"><button type="button" className="btn btn-primary " onClick={scrollToTop}>Sea Container Charges</button></Link>
                 {/* <button type="button" className="btn btn-primary " onClick={handleDownload} enabled={downloading}>Sea Container Charges</button> */}
               </div>
             </div>

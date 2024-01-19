@@ -25,6 +25,8 @@ const SeaContainer = () => {
     document.body.appendChild(link);
     link.click();
   };
+
+  
   return (
     <div>
       <Navbar />
@@ -38,6 +40,7 @@ const SeaContainer = () => {
             <div className="col-md-6 col-lg-4 wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
             </div>
             <div className='px-5 py-6'>
+              <p className="text-primary mb-2">Download Sea Container Charges Data Excel File</p>
               <button type="button" className="btn btn-primary align-left" onClick={handleDownload} enabled={downloading}>Download</button>
             </div>
           </div>

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './table.css';
 
 function DisplayTable() {
     const [data, setData] = useState([]);
@@ -19,9 +20,9 @@ function DisplayTable() {
 
     return (
         <div className="table-responsive">
-            <table className="table table-bordered table-striped">
-                <thead>
-                    <tr>
+            <table className="table table-hover table-bordered">
+                <thead className="thead-primary">
+                    <tr className='text-secondary'>
                         <th>Trade Type</th>
                         <th>Tariff Category</th>
                         <th>Tariff Description (Standardized)</th>
@@ -42,7 +43,7 @@ function DisplayTable() {
                 </thead>
                 <tbody>
                     {data.map((item) => (
-                        <tr key={item.id}>
+                        <tr key={item.id} className="text-primary-second">
                             <td>{item.TradeType}</td>
                             <td>{item.TariffCategory}</td>
                             <td>{item.TariffDesStandard}</td>
