@@ -26,6 +26,7 @@ const Carousel1 = () => {
                                 alt="Universal Freight Solutions LLC"
                                 className="img-fluid"
                                 style={{ width: '100%', height: '50%' }}     />
+                                {/* <img className="img-fluid" src={img1} style={{ width: '100%', height: '50%' }} alt="" /> */}
                         </div>
                         <div className="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style={{ background: 'rgba(1, 5, 20, .6)' }}>
                             <div className="container">

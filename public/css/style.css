@@ -165,7 +165,7 @@
 
 
 /*** Header ***/
-@media (max-width: 768px) {
+@media (max-width: 300px) {
     .header-carousel .owl-carousel-item {
         position: relative;
         min-height: 500px;
